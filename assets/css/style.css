@@ -21,9 +21,7 @@ body{
 
 .section {
     background-color: #a5a58d;
-    height: 10rem;
     margin-top: 5rem;
     opacity: 0.9;
     padding: 10rem;
-    width: 10rem;
 }
