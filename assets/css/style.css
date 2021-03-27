@@ -1,8 +1,13 @@
-/********************************* FONT *********************************/
+/********************************* FONT/color *********************************/
 
-body{
+.color-default{
+    background-color: #6b705c;
     color: #ffe8d6;
     font-weight: bolder;
+}
+
+.color-section{
+    background-color: #a5a58d;
 }
 
 /********************************* HEADING *********************************/
@@ -20,8 +25,8 @@ body{
 /********************************* SECTION *********************************/
 
 .section {
-    background-color: #a5a58d;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     opacity: 0.9;
     padding: 10rem;
 }
