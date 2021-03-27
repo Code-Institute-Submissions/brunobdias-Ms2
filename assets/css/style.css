@@ -1,21 +1,25 @@
-/********************************* FONT/color *********************************/
+/********************************* Font/Color-Scheme *********************************/
 
 .color-default{
     background-color: #6b705c;
     color: #ffe8d6;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .color-section{
     background-color: #a5a58d;
 }
 
-/********************************* HEADING *********************************/
-
-.nav-link {
-    background-color: #6b705c;
+a:active, a:link, a:visited {
     color: #ffe8d6;
 }
+
+a:hover{
+    color: #ddbea9;
+}
+
+/********************************* HEADING *********************************/
+
 
 /********************************* SECTION *********************************/
 
@@ -28,3 +32,10 @@
 
 /********************************* FOOTER *********************************/
 
+.footer{
+    padding: 1rem;
+}
+
+.footer div{
+    font-weight: normal;
+}
