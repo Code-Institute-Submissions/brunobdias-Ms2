@@ -1,3 +1,10 @@
+/********************************* FONT *********************************/
+
+body{
+    color: #ffe8d6;
+    font-weight: bolder;
+}
+
 /********************************* HEADING *********************************/
 
 .navbar,
@@ -6,7 +13,17 @@
 .nav-link {
     background-color: #6b705c;
     color: #ffe8d6;
+
 }
 
 
-/********************************* GENERAL *********************************/
+/********************************* SECTION *********************************/
+
+.section {
+    background-color: #a5a58d;
+    height: 10rem;
+    margin-top: 5rem;
+    opacity: 0.9;
+    padding: 10rem;
+    width: 10rem;
+}
