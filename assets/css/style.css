@@ -118,14 +118,13 @@ a:hover{
 
 .section {
     margin-top: 15rem;
-    height: 40rem; /*remove this line */
     margin-bottom: 5rem;
     opacity: 0.9;
     padding: 10rem;
 }
 
 #mapid { 
-    height: 180px;
+    height: 40rem;
      
 }
 
