@@ -1,3 +1,10 @@
+body {
+    background-image: url('assets/images/coliseum.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /********************************* Font/Color-Scheme *********************************/
 
 .color-default{
@@ -130,7 +137,6 @@ a:hover{
     margin-top: 15rem;
     margin-bottom: 5rem;
     opacity: 0.9;
-    width: 100%;
 }
 
 .map-div { 
@@ -138,6 +144,10 @@ a:hover{
     
 }
 
+.place-selector{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 /********************************* FOOTER *********************************/
 
 .footer{
