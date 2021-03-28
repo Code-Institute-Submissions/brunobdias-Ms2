@@ -15,6 +15,8 @@ body {
 
 .color-section{
     background-color: #a5a58d;
+    color: #ffe8d6;
+    opacity: 0.9;
 }
 
 a:active, a:link, a:visited {
@@ -133,21 +135,21 @@ a:hover{
 
 /********************************* SECTION *********************************/
 
-.section {
+.place-selector{
+    margin-bottom: 1rem;
     margin-top: 15rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.content {
     margin-bottom: 5rem;
-    opacity: 0.9;
 }
 
 .map-div { 
-    height: 20rem;
-    
+    height: 20rem;  
 }
 
-.place-selector{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
 /********************************* FOOTER *********************************/
 
 .footer{
