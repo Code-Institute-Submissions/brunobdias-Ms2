@@ -54,10 +54,10 @@ circle.bindPopup("I am a circle.");
 polygon.bindPopup("I am a polygon.");
 
 //Standalone Popup
-var popup = L.popup()
+/*var popup = L.popup()
     .setLatLng([51.5, -0.09])
     .setContent("I am a standalone popup.")
-    .openOn(mymap);
+    .openOn(mymap); */
 
 //Map Click
 var popup = L.popup();

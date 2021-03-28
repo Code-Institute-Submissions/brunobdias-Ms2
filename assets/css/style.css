@@ -91,14 +91,14 @@ a:hover{
 
 @media screen and (max-width: 575px) {
     #brand{
-        color: black;
+        color: black; /* Remove this color */
         margin-left: 5rem;
     }
 }
 
 @media screen and (max-width: 485px) {
     #brand{
-        color: black;
+        color: black; /* Remove this color */
         margin-left: 0;
     }
 }
@@ -124,19 +124,18 @@ a:hover{
     }
 }
 
-
 /********************************* SECTION *********************************/
 
 .section {
     margin-top: 15rem;
     margin-bottom: 5rem;
     opacity: 0.9;
-    padding: 10rem;
+    width: 100%;
 }
 
-#mapid { 
-    height: 40rem;
-     
+.map-div { 
+    height: 20rem;
+    
 }
 
 /********************************* FOOTER *********************************/
