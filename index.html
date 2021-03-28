@@ -25,28 +25,35 @@
     </style>
 
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg color-default">
+
+        <nav id="navbar" class="navbar sticky-top navbar-expand-lg color-default">
             <div class="container-fluid navbar">
                 <a class="navbar-brand color-default" href="">
-                    <img src="assets/images/navlogo.png" class="logo" width="100" height="100" alt="">
-                    <span>The 7 wonders of the modern world</span></a>
-                <button class="navbar-toggler collapsed color-default" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="d-lg-flex justify-content-lg-end collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" target="_blank">Places</a>
-                        </li>
-                    </ul>
+                    <img id="logo" class="logo" src="assets/images/navlogo-lg.png" alt="">
+                </a>
+                <div class="brand-name text-center">
+                    <a id="brand" class="brand-name" href=""> The 7 Wonders<br> of the Modern World </a>
+                </div>
+                <div id="navbar-links" class="navbar-links">
+                    <button class="navbar-toggler collapsed color-default" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="d-lg-flex justify-content-lg-end collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Places</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <section class="container-sm section color-section">
@@ -98,6 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
