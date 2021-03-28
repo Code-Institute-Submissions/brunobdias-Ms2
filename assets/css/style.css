@@ -32,26 +32,6 @@ a:hover{
     color: #ddbea9;
 }
 
-@media screen and (min-width: 446px) {
-    .navbar-expand-lg .navbar-nav {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 446px) {
-    #logo{
-        display: none;
-    }
-}
-
-/*
-@media screen and (max-width: 448px) {
-.navbar-nav {
-    display: block;
-    }
-}
-*/
-
 /* sample from https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp */
 
 /* Create a sticky/fixed navbar */
@@ -99,20 +79,51 @@ a:hover{
   float: right;
 }
 
+/*************************** @mediaScreen Navbar ************************/
+
+
+@media screen and (max-width: 750px) {
+    #logo-link{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #brand{
+        color: black;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    #brand{
+        color: black;
+        margin-left: 0;
+    }
+}
+
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   #navbar {
     padding: 1rem 0.5rem !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
   }
   #navbar a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
   #navbar-right {
     float: none;
   }
 }
+
+@media screen and (min-width: 446px) {
+    .navbar-nav {
+        display: flex;
+    }
+}
+
 
 /********************************* SECTION *********************************/
 

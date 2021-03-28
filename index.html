@@ -35,27 +35,32 @@
 
     <header>
 
-        <nav id="navbar" class="navbar sticky-top navbar-expand-lg color-default">
-            <div class="container-fluid navbar">
-                <a class="navbar-brand color-default" href="">
+        <nav id="navbar" class="navbar sticky-top navbar-expand-sm color-default">
+            <div id="navbar-top-container" class="container-fluid navbar">
+                <a id="logo-link" class="navbar-brand color-default" href="">
                     <img id="logo" class="logo" src="assets/images/navlogo-lg.png" alt="">
                 </a>
-                <div class="brand-name text-center">
+                <div class="brand-name">
                     <a id="brand" class="brand-name" href=""> The 7 Wonders<br> of the Modern World </a>
                 </div>
+            </div>
+            <div class="container-fluid navbar row">
                 <div id="navbar-links" class="navbar-links">
                     <button class="navbar-toggler collapsed color-default" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button>
-                    <div class="d-lg-flex justify-content-lg-end collapse navbar-collapse" id="navbarCollapse">
+                    <div class="d-sm-flex justify-content-sm-end collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Places</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Language</a>
                             </li>
                         </ul>
                     </div>
