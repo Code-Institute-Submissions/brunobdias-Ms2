@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/images/coliseum.jpg');
+    background-image: url('../images/colosseum-lg-bkg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
