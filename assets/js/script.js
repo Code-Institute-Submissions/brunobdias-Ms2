@@ -1,15 +1,14 @@
 //Preload Sample from https://stackoverflow.com/questions/476679/preloading-images-with-jquery
-$.fn.preloadImages = function() {
-    this.each(function(){
+$.fn.preloadImages = function () {
+    this.each(function () {
         $('<img/>')[0].src = this;
     });
 }
 
 //When load the page, fill the Colosseum data
-$(window).on("load", function() {
+$(window).on("load", function () {
     $("#btnColosseum").trigger("click");
-    
-    $([ 'assets/images/colosseum-lg-bkg.jpg',
+    $(['assets/images/colosseum-lg-bkg.jpg',
         'assets/images/chichen-bkg.jpg',
         'assets/images/machupicchu-bkg.jpg',
         'assets/images/christ-bkg.jpg',
