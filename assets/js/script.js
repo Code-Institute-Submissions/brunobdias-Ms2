@@ -1,4 +1,20 @@
-//When load the page, fill the Colosseum
+//Preload Sample from https://stackoverflow.com/questions/476679/preloading-images-with-jquery
+$.fn.preloadImages = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+// Usage:
+$([ 'assets/images/colosseum-lg-bkg.jpg',
+    'assets/images/chichen-bkg.jpg',
+    'assets/images/machupicchu-bkg.jpg',
+    'assets/images/christ-bkg.jpg',
+    'assets/images/great-wall-bkg.jpg',
+    'assets/images/petra-bkg.jpg',
+    'assets/images/tajmahal-bkg.jpg'
+]).preloadImages();
+
+//When load the page, fill the Colosseum data
 $(window).on("load", function() {
     $("#btnColosseum").trigger("click");
 });
@@ -26,7 +42,9 @@ function scrollFunction() {
 //Places button Selection
 
 $("#btnColosseum").click(function () {
-    changePlace("Colosseum", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1591014979417-20f9a787a4da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1339&q=80)', //bkgImgURL
+    changePlace('url(assets/images/colosseum-lg-bkg.jpg)', //bkgImgURL
+        "Colosseum", //place 
         "https://parcocolosseo.it/en/area/the-colosseum/",//fontLink
         "Colosseum", //fontDescription
         "https://parcocolosseo.it/en/area/the-colosseum/", //placeLink
@@ -38,7 +56,9 @@ $("#btnColosseum").click(function () {
 });
 
 $("#btnChichen").click(function () {
-    changePlace("Chichén Itzá", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1348&q=80)', //bkgImgURL
+    changePlace('url(assets/images/chichen-bkg.jpg)', //bkgImgURL
+        "Chichén Itzá", //place 
         "https://www.inah.gob.mx/zonas/146-zona-arqueologica-de-chichen-itza",//fontLink
         "INAH México Government", //fontDescription
         "https://www.inah.gob.mx/zonas/146-zona-arqueologica-de-chichen-itza", //placeLink
@@ -50,7 +70,9 @@ $("#btnChichen").click(function () {
 });
 
 $("#btnMachuPichu").click(function () {
-    changePlace("Machu Picchu", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)', //bkgImgURL
+    changePlace('url(assets/images/machupicchu-bkg.jpg)', //bkgImgURL 
+        "Machu Picchu", //place 
         "https://en.wikipedia.org/wiki/Machu_Picchu",//fontLink
         "Wikipedia", //fontDescription
         "https://www.machupicchu.gob.pe/?lang=en", //placeLink
@@ -62,7 +84,9 @@ $("#btnMachuPichu").click(function () {
 });
 
 $("#btnChrist").click(function () {
-    changePlace("Christ The Redeemer", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1539053197169-395aea7a3bc3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)', //bkgImgURL
+    changePlace('url(assets/images/christ-bkg.jpg)', //bkgImgURL
+        "Christ The Redeemer", //place 
         "http://visit.rio/en/que_fazer/christtheredeemer/",//fontLink
         "Riotur", //fontDescription
         "http://www.cristoredentoroficial.com.br/", //placeLink
@@ -74,7 +98,9 @@ $("#btnChrist").click(function () {
 });
 
 $("#btnGreatWall").click(function () {
-    changePlace("The Great Wall of China", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1558981012-236ee58eb5c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1276&q=80)', //bkgImgURL
+    changePlace('url(assets/images/great-wall-bkg.jpg)', //bkgImgURL
+        "The Great Wall of China", //place 
         "https://en.wikipedia.org/wiki/Great_Wall_of_China",//fontLink
         "Wikipedia", //fontDescription
         "#", //placeLink
@@ -86,7 +112,9 @@ $("#btnGreatWall").click(function () {
 });
 
 $("#btnPetra").click(function () {
-    changePlace("Ruins of Petra", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1605647268682-3a555008c445?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)', //bkgImgURL
+    changePlace('url(assets/images/petra-bkg.jpg)', //bkgImgURL
+        "Ruins of Petra", //place 
         "http://www.visitpetra.jo/Pages/viewpage.aspx?pageID=124",//fontLink
         "Visit Petra", //fontDescription
         "http://www.visitpetra.jo/", //placeLink
@@ -98,7 +126,9 @@ $("#btnPetra").click(function () {
 });
 
 $("#btnTajMahal").click(function () {
-    changePlace("Taj Mahal", //place 
+    //changePlace('url(https://images.unsplash.com/photo-1564507592333-c60657eea523?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80)', //bkgImgURL
+    changePlace('url(assets/images/tajmahal-bkg.jpg)', //bkgImgURL
+        "Taj Mahal", //place 
         "https://www.tajmahal.gov.in/creation-history-of-taj-mahal.aspx",//fontLink
         "Taj Mahal India Government", //fontDescription
         "https://www.tajmahal.gov.in/", //placeLink
@@ -110,8 +140,12 @@ $("#btnTajMahal").click(function () {
 });
 
 
-function changePlace(place, fontLink, fontDescription, placeLink, placeTwitter, placeInstagram, placeFacebook, placeYoutube) {
+function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, placeTwitter, placeInstagram, placeFacebook, placeYoutube) {
 
+    $("body").css("background-image", bkgImgURL).css(
+        "background-repeat", "no-repeat").css(
+            "background-attachment", "fixed").css(
+                "background-size", "cover");
     $("#place-h2").text(place);
     $("#content-p").text(getContent(place));
     $(".font-link").attr("href", fontLink).text(fontDescription);
