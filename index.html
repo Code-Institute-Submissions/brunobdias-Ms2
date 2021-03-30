@@ -18,6 +18,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
 
     <title>7 Wonders of Modern World</title>
 </head>
@@ -97,7 +99,10 @@
         <!--<div id="mapid" class="map-div"></div> -->
 
         <!-- <div id="player"></div> -->
-        <div id="player"></div>
+        <div class="conainer-sm video map row">
+            <div id="player"></div>
+            <div id="mapid" class="map-div"></div>
+        </div>
 
 
         <div class="Place Description">
