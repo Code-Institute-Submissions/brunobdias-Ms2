@@ -4,19 +4,19 @@ $.fn.preloadImages = function() {
         $('<img/>')[0].src = this;
     });
 }
-// Usage:
-$([ 'assets/images/colosseum-lg-bkg.jpg',
-    'assets/images/chichen-bkg.jpg',
-    'assets/images/machupicchu-bkg.jpg',
-    'assets/images/christ-bkg.jpg',
-    'assets/images/great-wall-bkg.jpg',
-    'assets/images/petra-bkg.jpg',
-    'assets/images/tajmahal-bkg.jpg'
-]).preloadImages();
 
 //When load the page, fill the Colosseum data
 $(window).on("load", function() {
     $("#btnColosseum").trigger("click");
+    
+    $([ 'assets/images/colosseum-lg-bkg.jpg',
+        'assets/images/chichen-bkg.jpg',
+        'assets/images/machupicchu-bkg.jpg',
+        'assets/images/christ-bkg.jpg',
+        'assets/images/great-wall-bkg.jpg',
+        'assets/images/petra-bkg.jpg',
+        'assets/images/tajmahal-bkg.jpg'
+    ]).preloadImages();
 });
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
