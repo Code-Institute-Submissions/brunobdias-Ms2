@@ -1,13 +1,5 @@
-//Preload Sample from https://stackoverflow.com/questions/476679/preloading-images-with-jquery
-$.fn.preloadImages = function () {
-    this.each(function () {
-        $('<img/>')[0].src = this;
-    });
-}
-
-//When load the page, fill the Colosseum data
+//When load the page, preload Images and fill the Colosseum data 
 $(window).on("load", function () {
-    $("#btnColosseum").trigger("click");
     $(['assets/images/colosseum-lg-bkg.jpg',
         'assets/images/chichen-bkg.jpg',
         'assets/images/machupicchu-bkg.jpg',
@@ -16,11 +8,23 @@ $(window).on("load", function () {
         'assets/images/petra-bkg.jpg',
         'assets/images/tajmahal-bkg.jpg'
     ]).preloadImages();
+     $("#btnColosseum").trigger("click");
 });
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// When the user scrolls down 80px from the top of the document, 
+//resize the navbar's padding and the logo's font size
 window.onscroll = function () { scrollFunction() };
 
+//Preload Sample from 
+//https://stackoverflow.com/questions/476679/preloading-images-with-jquery
+$.fn.preloadImages = function () {
+    this.each(function () {
+        $('<img/>')[0].src = this;
+    });
+}
+
+//Scroll Sample from
+//https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
@@ -38,8 +42,7 @@ function scrollFunction() {
     }
 }
 
-//Places button Selection
-
+//Places button click
 $("#btnColosseum").click(function () {
     //changePlace('url(https://images.unsplash.com/photo-1591014979417-20f9a787a4da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1339&q=80)', //bkgImgURL
     changePlace('url(assets/images/colosseum-lg-bkg.jpg)', //bkgImgURL
@@ -50,7 +53,11 @@ $("#btnColosseum").click(function () {
         "http://www.twitter.com/parcocolosseo", //placeTwitter
         "http://www.instagram.com/parcocolosseo", //placeInstagram
         "http://www.facebook.com/ParcoColosseo", //placeFacebook
-        "http://www.youtube.com/ParcoColosseo", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/fTVXfRooqLg" 
+            title="Colosseum" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -64,7 +71,11 @@ $("#btnChichen").click(function () {
         "https://twitter.com/INAHmx", //placeTwitter
         "https://www.instagram.com/inahmx/", //placeInstagram
         "https://www.facebook.com/INAHmx/", //placeFacebook
-        "https://www.youtube.com/user/INAHTV", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/TQEg4P9Mmio" 
+            title="Chichén Itzá" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -78,7 +89,11 @@ $("#btnMachuPichu").click(function () {
         "https://twitter.com/search?q=%23machupicchu&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/machupicchu/", //placeInstagram
         "https://www.facebook.com/hashtag/machupicchu", //placeFacebook
-        "https://www.youtube.com/results?search_query=machu+picchu", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/_hbRXmSzK38" 
+            title="Machu Picchu" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -92,7 +107,11 @@ $("#btnChrist").click(function () {
         "https://twitter.com/cristoredentor", //placeTwitter
         "https://www.instagram.com/cristoredentor.rio/", //placeInstagram
         "https://www.facebook.com/cristoredentoroficial/", //placeFacebook
-        "https://www.youtube.com/channel/UCquMFKC9spjl5XL8t3ZvMWA", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/fA7kQn-l6T4" 
+            title="Christ The Redeemer" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -106,7 +125,11 @@ $("#btnGreatWall").click(function () {
         "https://twitter.com/search?q=The%20great%20wall%20of%20china&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/thegreatwallofchina", //placeFacebook
-        "https://www.youtube.com/results?search_query=great+wall+of+china", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/0aeO98y6vp0" 
+            title="The Great Wall of China" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -120,7 +143,11 @@ $("#btnPetra").click(function () {
         "https://twitter.com/visitpetra", //placeTwitter
         "https://www.instagram.com/explore/tags/visitpetra/", //placeInstagram
         "https://www.facebook.com/PetraVisit", //placeFacebook
-        "https://www.youtube.com/channel/UCqpZB6AbOcYUTM580gZByZQ", //placeYoutube
+        `<iframe width="300" height="200" 
+            src="https://www.youtube.com/embed/JFA8oMBCNUA" 
+            title="Ruins of Petra" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
@@ -134,12 +161,17 @@ $("#btnTajMahal").click(function () {
         "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
-        "https://www.youtube.com/results?search_query=taj+mahal", //placeYoutube
+        `<iframe width="300" height="200"
+            src="https://www.youtube.com/embed/N-XNGXXHNIs" 
+            title="Taj Mahal" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
     );
 });
 
 
-function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, placeTwitter, placeInstagram, placeFacebook, placeYoutube) {
+function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, 
+    placeTwitter, placeInstagram, placeFacebook, placeYoutube) {
 
     $("body").css("background-image", bkgImgURL).css(
         "background-repeat", "no-repeat").css(
@@ -152,7 +184,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, pla
     $(".place-twitter").attr("href", placeTwitter);
     $(".place-instagram").attr("href", placeInstagram);
     $(".place-facebook").attr("href", placeFacebook);
-    $(".place-youtube").attr("href", placeYoutube);
+    $(".video-div").html(placeYoutube);
 };
 
 function getContent(place) {
@@ -247,52 +279,10 @@ function getContent(place) {
     };
 }
 
-// Youtube 1st Steps
 
-// This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
+//************************ Leaflet Map *********************//
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-var player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '200',
-        width: '300',
-        videoId: 'XRdPtt00YPU',//'fTVXfRooqLg',
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-// The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
-
-// The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false;
-function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-    }
-}
-function stopVideo() {
-    player.stopVideo();
-}
-
-//Leaflet 1st STEPS
-
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([41.89720933591209, 12.496851436602908], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -304,33 +294,10 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(mymap);
 
 // Add Marker
-var marker = L.marker([51.5, -0.09]).addTo(mymap);
-
-//Adding a circle
-var circle = L.circle([51.508, -0.11], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(mymap);
-
-//Adding a polygon
-var polygon = L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
-]).addTo(mymap);
+var marker = L.marker([41.891544, 12.496144]).addTo(mymap);
 
 //Adding a pop-up
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
-
-//Standalone Popup
-/*var popup = L.popup()
-    .setLatLng([51.5, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(mymap); */
+//marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
 //Map Click
 var popup = L.popup();
@@ -338,8 +305,10 @@ var popup = L.popup();
 function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
+        .setContent("Local " + e.latlng.toString())
         .openOn(mymap);
 }
 
 mymap.on('click', onMapClick);
+
+//*********************************** End Map ***********************************//
