@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
     <header>
 
         <nav id="navbar" class="navbar sticky-top navbar-expand-sm color-default">
@@ -99,16 +100,23 @@
         <!--<div id="mapid" class="map-div"></div> -->
 
         <!-- <div id="player"></div> -->
-        <div class="conainer-sm video map row">
-            <div id="player"></div>
-            <div id="mapid" class="map-div"></div>
+        <div class="conainer-sm video-map text-center">
+            <ul class="list-inline social-links">
+                <li class="list-inline-item mt-3">
+                    <div id="player" class="video-div">
+                    </div>
+                </li>
+                <li class="list-inline-item">
+                    <div id="mapid" class="map-div"></div>
+                </li>
+            </ul>
         </div>
 
 
         <div class="Place Description">
             <h2 id="place-h2"></h2>
             <p id="content-p"></p>
-            <p>Font <a class="font-link" href="" target="_blank"></a>
+            <p><a class="font-link" href="" target="_blank"></a>
             </p>
             <!--
             <div class="place-img"><img src="assets/images/colosseum.jpg" alt="colosseum"></div>
@@ -198,7 +206,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>    
 </body>
 
 </html>
