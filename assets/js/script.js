@@ -58,6 +58,7 @@ $("#btnColosseum").click(function () {
             title="Colosseum" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "ita", //placeCountry
     );
 });
 
@@ -76,6 +77,7 @@ $("#btnChichen").click(function () {
             title="Chichén Itzá" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "mex", //placeCountry
     );
 });
 
@@ -94,6 +96,7 @@ $("#btnMachuPichu").click(function () {
             title="Machu Picchu" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "per", //placeCountry
     );
 });
 
@@ -112,6 +115,7 @@ $("#btnChrist").click(function () {
             title="Christ The Redeemer" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "bra", //placeCountry
     );
 });
 
@@ -130,6 +134,7 @@ $("#btnGreatWall").click(function () {
             title="The Great Wall of China" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "chn", //placeCountry
     );
 });
 
@@ -148,6 +153,7 @@ $("#btnPetra").click(function () {
             title="Ruins of Petra" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "jor", //placeCountry
     );
 });
 
@@ -166,12 +172,13 @@ $("#btnTajMahal").click(function () {
             title="Taj Mahal" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "ind", //placeCountry
     );
 });
 
 
 function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, 
-    placeTwitter, placeInstagram, placeFacebook, placeYoutube) {
+    placeTwitter, placeInstagram, placeFacebook, placeYoutube, placeCountry) {
 
     $("body").css("background-image", bkgImgURL).css(
         "background-repeat", "no-repeat").css(
@@ -185,6 +192,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".place-instagram").attr("href", placeInstagram);
     $(".place-facebook").attr("href", placeFacebook);
     $(".video-div").html(placeYoutube);
+    fetchCountryData(placeCountry);
 };
 
 function getContent(place) {
@@ -279,6 +287,25 @@ function getContent(place) {
     };
 }
 
+//************************ RestCountries Api *********************//
+
+fetchAllCountries(); 
+
+function fetchAllCountries(){
+    console.log("All Countries list");
+    fetch("https://restcountries.eu/rest/v2/all")
+        .then(response => response.json())
+        .then((data) => console.log(data))
+}
+
+function fetchCountryData(placeCountry){
+    console.log(placeCountry);
+    fetch("https://restcountries.eu/rest/v2/alpha/" + placeCountry)
+        .then(response => response.json())
+        .then((data) => console.log(data))
+        
+}
+//************************ End RestCountries Api *********************//
 
 //************************ Leaflet Map *********************//
 
