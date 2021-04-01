@@ -186,7 +186,8 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
                 "background-size", "cover");
     $("#place-h2").text(place);
     $("#content-p").text(getContent(place));
-    $(".font-link").attr("href", fontLink).text(fontDescription);
+    $(".font-link").attr("href", fontLink).html(fontDescription 
+        + ` <i class="fas fa-external-link-alt" aria-hidden="true"></i>`);
     $(".place-link").attr("href", placeLink);
     $(".place-twitter").attr("href", placeTwitter);
     $(".place-instagram").attr("href", placeInstagram);
@@ -286,26 +287,6 @@ function getContent(place) {
         )
     };
 }
-
-//************************ RestCountries Api *********************//
-
-fetchAllCountries(); 
-
-function fetchAllCountries(){
-    console.log("All Countries list");
-    fetch("https://restcountries.eu/rest/v2/all")
-        .then(response => response.json())
-        .then((data) => console.log(data))
-}
-
-function fetchCountryData(placeCountry){
-    console.log(placeCountry);
-    fetch("https://restcountries.eu/rest/v2/alpha/" + placeCountry)
-        .then(response => response.json())
-        .then((data) => console.log(data))
-        
-}
-//************************ End RestCountries Api *********************//
 
 //************************ Leaflet Map *********************//
 

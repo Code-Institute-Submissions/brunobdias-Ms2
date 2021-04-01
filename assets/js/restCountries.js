@@ -1,47 +1,53 @@
+//Sample integration from 
+//https://stackoverflow.com/questions/65189680/rest-countries-api-how-to-get-content
+
+
 //https://restcountries.eu/rest/v2/alpha/?codes=ita;mex;per;bra;chn;jor;ind
-//fetch('https://restcountries.eu/rest/v2/alpha/cn')
-fetch('https://restcountries.eu/rest/v2/alpha/cn')
-    .then(res => res.json())
-    .then(data => initialize(data))
-    .catch(err => console.log('Error:', err.message));
+function fetchCountryData(placeCountry) {
+
+    fetch('https://restcountries.eu/rest/v2/alpha/' + placeCountry)
+        .then(res => res.json())
+        .then(data => initialize(data))
+        .catch(err => console.log('Error:', err.message));
 
 
-function initialize({
-    name,
-    capital,
-    callingCodes,
-    population,
-    currencies,
-    region,
-    latlng,
-    timezones,
-    borders,
-    flag
-}) {
-    console.log({
+    function initialize({
         name,
         capital,
         callingCodes,
         population,
-        currencies,
+        //currencies,
         region,
         latlng,
         timezones,
         borders,
         flag
-    });
-    
-    $(".country-info").html(`<div class"info">
+    }) {
+        console.log({
+            name,
+            capital,
+            callingCodes,
+            population,
+            //currencies,
+            region,
+            latlng,
+            timezones,
+            borders,
+            flag
+        });
+
+        $(".country-info").html(`<div class"info">
                     <p> Name: ${name} <p>
                     <p> Capital: ${capital} </p>
                     <p> Lat. Long.: ${latlng} <p>
                     <p> Calling Code: ${callingCodes} <p>
                     <p> Timezone: ${timezones} <p>
                     <p> Borders: ${borders} <p>
-                    <p> Currencie: ${currencies} <p>
                     <p> Population: ${population} <p>
-                    <p> Flag: ${flag} <p>
+                    <img src = ${flag} alt= ${name} width="200" height="100"/>
                 </div>`);
+
+    }
 
 }
 
