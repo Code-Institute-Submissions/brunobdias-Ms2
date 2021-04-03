@@ -146,10 +146,13 @@ a:hover{
     margin-bottom: 5rem;
 }
 
-.map-div { 
-    height: 12.5rem;
-    width: 18.75rem;
+#map { 
+    /*height: 12.5rem;
+    width: 18.75rem; */
+    height: 20rem;
+    width: 30rem;
 }
+
 
 /********************************* FOOTER *********************************/
 

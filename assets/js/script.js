@@ -53,13 +53,14 @@ $("#btnColosseum").click(function () {
         "http://www.twitter.com/parcocolosseo", //placeTwitter
         "http://www.instagram.com/parcocolosseo", //placeInstagram
         "http://www.facebook.com/ParcoColosseo", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/fTVXfRooqLg" 
             title="Colosseum" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "ita", //placeCountry
     );
+    changeMapLocation("Colosseum");
 });
 
 $("#btnChichen").click(function () {
@@ -72,13 +73,14 @@ $("#btnChichen").click(function () {
         "https://twitter.com/INAHmx", //placeTwitter
         "https://www.instagram.com/inahmx/", //placeInstagram
         "https://www.facebook.com/INAHmx/", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/TQEg4P9Mmio" 
             title="Chichén Itzá" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "mex", //placeCountry
     );
+    changeMapLocation("Chichén Itzá");
 });
 
 $("#btnMachuPichu").click(function () {
@@ -91,13 +93,14 @@ $("#btnMachuPichu").click(function () {
         "https://twitter.com/search?q=%23machupicchu&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/machupicchu/", //placeInstagram
         "https://www.facebook.com/hashtag/machupicchu", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/_hbRXmSzK38" 
             title="Machu Picchu" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "per", //placeCountry
     );
+    changeMapLocation("Machu Picchu");
 });
 
 $("#btnChrist").click(function () {
@@ -110,13 +113,14 @@ $("#btnChrist").click(function () {
         "https://twitter.com/cristoredentor", //placeTwitter
         "https://www.instagram.com/cristoredentor.rio/", //placeInstagram
         "https://www.facebook.com/cristoredentoroficial/", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/fA7kQn-l6T4" 
             title="Christ The Redeemer" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "bra", //placeCountry
     );
+    changeMapLocation("Christ The Redeemer");
 });
 
 $("#btnGreatWall").click(function () {
@@ -129,13 +133,14 @@ $("#btnGreatWall").click(function () {
         "https://twitter.com/search?q=The%20great%20wall%20of%20china&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/thegreatwallofchina", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/0aeO98y6vp0" 
             title="The Great Wall of China" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "chn", //placeCountry
     );
+    changeMapLocation("The Great Wall of China");
 });
 
 $("#btnPetra").click(function () {
@@ -148,13 +153,14 @@ $("#btnPetra").click(function () {
         "https://twitter.com/visitpetra", //placeTwitter
         "https://www.instagram.com/explore/tags/visitpetra/", //placeInstagram
         "https://www.facebook.com/PetraVisit", //placeFacebook
-        `<iframe width="300" height="200" 
+        `<iframe width="480" height="320" 
             src="https://www.youtube.com/embed/JFA8oMBCNUA" 
             title="Ruins of Petra" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "jor", //placeCountry
     );
+    changeMapLocation("Ruins of Petra");
 });
 
 $("#btnTajMahal").click(function () {
@@ -167,13 +173,14 @@ $("#btnTajMahal").click(function () {
         "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
-        `<iframe width="300" height="200"
+        `<iframe width="480" height="320"
             src="https://www.youtube.com/embed/N-XNGXXHNIs" 
             title="Taj Mahal" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "ind", //placeCountry
     );
+    changeMapLocation("Taj Mahal");
 });
 
 
@@ -287,36 +294,3 @@ function getContent(place) {
         )
     };
 }
-
-//************************ Leaflet Map *********************//
-
-var mymap = L.map('mapid').setView([41.89720933591209, 12.496851436602908], 13);
-
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiYnJ1bm9iZGlhcyIsImEiOiJja21zbDNoNzgwaXN3MndwbTByaTRsdjB1In0.RPbFqb9_Y2EPbCRa0x6a0A'
-}).addTo(mymap);
-
-// Add Marker
-var marker = L.marker([41.891544, 12.496144]).addTo(mymap);
-
-//Adding a pop-up
-//marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-
-//Map Click
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("Local " + e.latlng.toString())
-        .openOn(mymap);
-}
-
-mymap.on('click', onMapClick);
-
-//*********************************** End Map ***********************************//
