@@ -9,7 +9,7 @@ let mapTileLayers = L.tileLayer(
     { attribution: "Powered by Esri" }
 );
 
-/*CREDIT: Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)*/
+/*CREDIT: Tim Nelson Map 1st Coordinates*/
 let map = L.map("map", {
     layers: [mapTileLayers], // variable from above
     center: [0, 0], // central lat-lng once loaded
@@ -23,7 +23,6 @@ L.control.scale().addTo(map); // adds scale/legend in bottom-left corner of map
 //--- END CREDIT ---//
 
 // Function to change map display with button click  
-let pinMarker = {};
 function changeMapLocation(location) {
     /* CREDIT: .find() by location in array of objects: 
   https://stackoverflow.com/a/35398031/13484385*/
@@ -34,26 +33,7 @@ function changeMapLocation(location) {
 
     // map.setView(newMapLocation.center, newMapLocation.zoom);
     map.flyTo(newMapLocation.center, newMapLocation.zoom);
-    if (newMapLocation.pin) {
-        map.removeLayer(pinMarker);
-        pinMarker = L.marker(newMapLocation.pin)
-            .addTo(map)
-            .bindPopup(
-                "<strong><h4>" +
-                newMapLocation.location +
-                "</h4></strong>" +
-                "<strong>" +
-                "Latitude:      " +
-                "</strong>" +
-                newMapLocation.pin[0] +
-                "<strong>" +
-                "<br>Longitude:     " +
-                "</strong>" +
-                newMapLocation.pin[1]
-            );
-    } else {
-        map.removeLayer(pinMarker);
-    }
+
 }
 
 //Arrays for initial locations
@@ -102,17 +82,78 @@ const mapLocations = [
         pin: [27.175316584322186, 78.04217438466947],
     },
 ];
-
 /*
  END CREDIT
 */
+
+/*CREDIT: Tim Nelson - Map Custom Icons*/
+//----------------------------------------------------------- MARKERS + CUSTOM ICONS
+var colosseumMarker = L.marker([41.890401862527504, 12.492252356066988]).addTo(map).bindPopup("Colosseum");
+var colosseumIcon = new L.Icon({
+    iconUrl: "assets/images/colosseumIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+colosseumMarker.setIcon(colosseumIcon);
+
+var chichenMarker = L.marker([20.684989246175014, -88.56776102695805]).addTo(map).bindPopup("Chichén Itzá");
+var chichenIcon = new L.Icon({
+    iconUrl: "assets/images/chichenItzaIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+chichenMarker.setIcon(chichenIcon);
+
+var machuPicchuMarker = L.marker([-13.162908001608807, -72.54495596822237]).addTo(map).bindPopup("Machu Picchu");
+var machuPicchuIcon = new L.Icon({
+    iconUrl: "assets/images/machuPicchuIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+machuPicchuMarker.setIcon(machuPicchuIcon);
+
+var christMarker = L.marker([-22.951708516090054, -43.21043355754436]).addTo(map).bindPopup("Christ the Redeemer");
+var christIcon = new L.Icon({
+    iconUrl: "assets/images/christRedeemerIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+christMarker.setIcon(christIcon);
+
+var greatWallMarker = L.marker([40.432853746568234, 116.57043796047508]).addTo(map).bindPopup("Great Wall of China");
+var greatWallIcon = new L.Icon({
+    iconUrl: "assets/images/greatWallIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+greatWallMarker.setIcon(greatWallIcon);
+
+var petraMarker = L.marker([30.32870441594906, 35.4442870963521]).addTo(map).bindPopup("Ruins of Petra");
+var petraIcon = new L.Icon({
+    iconUrl: "assets/images/petraIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+petraMarker.setIcon(petraIcon);
+
+var tajMahalMarker = L.marker([27.175316584322186, 78.04217438466947]).addTo(map).bindPopup("Taj Mahal");
+var tajMahalIcon = new L.Icon({
+    iconUrl: "assets/images/tajMahalIco.png",
+    iconSize: [50, 50],
+    iconAnchor: [25, 50]
+});
+tajMahalMarker.setIcon(tajMahalIcon);
+
+/*END CREDIT*/
+
+
 
 
 /*
 function onePlace(latitude, longitude) {
     //removeLayer(places);
             var places = L.layerGroup();
-            
+
             L.marker([latitude, longitude]).addTo(places);
 
             var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
@@ -137,9 +178,9 @@ function onePlace(latitude, longitude) {
                     .setContent(e.latlng.toString())
                     .openOn(map);
             }
-            
+
             map.on('click', onMapClick);
-            
+
             var baseLayers = {
                 "Grayscale": grayscale,
                 "Streets": streets
@@ -171,7 +212,7 @@ var countries = L.layerGroup([italy, mexico, peru, brazil, china, jordan, india]
 
 */
 
-/* Mapa varios Marcadores 
+/* Mapa varios Marcadores
 
 var colosseum = L.marker([41.890401862527504, 12.492252356066988]),
     chichenItza = L.marker([20.684989246175014, -88.56776102695805]),
@@ -201,7 +242,7 @@ var map = L.map('mapid', {
     center: [20, 13],
     zoom: 1, //1.75,
     zoomSnap: 0.25,
-    layers: [grayscale, //places, 
+    layers: [grayscale, //places,
         markerColosseum,
         markerChichenItza,
         markerMachuPicchu,
