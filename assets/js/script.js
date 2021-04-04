@@ -2,7 +2,7 @@ var placeSelected = "";
 
 //When load the page, preload Images and fill the Colosseum data 
 $(window).on("load", function () {
-    $(['assets/images/colosseum-lg-bkg.jpg',
+    $(['assets/images/colosseum-bkg.jpg',
         'assets/images/chichen-bkg.jpg',
         'assets/images/machupicchu-bkg.jpg',
         'assets/images/christ-bkg.jpg',
@@ -51,7 +51,7 @@ function scrollFunction() {
 //Places button click
 $("#btnColosseum").click(function () {
     //changePlace('url(https://images.unsplash.com/photo-1591014979417-20f9a787a4da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1339&q=80)', //bkgImgURL
-    changePlace('url(assets/images/colosseum-lg-bkg.jpg)', //bkgImgURL
+    changePlace('url(assets/images/colosseum-bkg.jpg)', //bkgImgURL
         "Colosseum", //place 
         "https://parcocolosseo.it/en/area/the-colosseum/",//fontLink
         "Colosseum", //fontDescription
