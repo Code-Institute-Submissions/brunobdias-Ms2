@@ -159,11 +159,12 @@ a:hover{
 .content {
     margin-bottom: 5rem;
     /*CREDIT - https://www.w3schools.com/css/css_overflow.asp*/
-    overflow: scroll;        
+    overflow: auto;
+            
 }
 
 #player{
-    overflow: scroll;
+    overflow: auto;
 }
 
 #map { 
@@ -171,7 +172,7 @@ a:hover{
     width: 18.75rem; */
     height: 20rem;
     width: 30rem;
-    overflow: scroll; 
+    overflow: auto; 
 }
 
 .btn-toggle :focus{

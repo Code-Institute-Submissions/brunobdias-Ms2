@@ -36,7 +36,7 @@ function scrollFunction() {
         $("#navbar").css("opacity", "1");
         $("#navbar").css("padding", "0.1rem 0.1rem");
         $("#brand").css("fontSize", "1.5rem");
-        $("#brand").css("margin-left", "1.5rem");
+        $("#brand").css("margin-left", "1rem");
         $("#brand").css("weight", "bold");
         $("#brand").text("The 7 Wonders of the Modern World");
         $("#logo").attr("src", "assets/images/navlogo.png").fadeIn(1000);
@@ -45,10 +45,18 @@ function scrollFunction() {
         $("#navbar").css("opacity", "0.85");
         $("#navbar").css("padding", "2rem 0.5rem");
         $("#brand").css("fontSize", "2rem");
-        $("#brand").css("margin-left", "5rem");
         $("#brand").css("weight", "bold");
         $("#brand").html(`The 7 Wonders<br> of the Modern World`);
         $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
+
+        //Control Add to better view on mobile
+        if ($(window).width() < 470) {
+            $("#brand").css("margin-left", "3rem");
+        } else {
+            $("#brand").css("margin-left", "5rem");
+        }
+
+
     }
 }
 
@@ -214,10 +222,10 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     checkPlaceContentVisible();
 };
 
-function checkPlaceContentVisible(){
+function checkPlaceContentVisible() {
     if (!$("#content-place").is(':visible')) {
-            $("#btnHideContent").click();
-        } 
+        $("#btnHideContent").click();
+    }
 }
 
 $("#btnHideContent").click(function () {
@@ -227,7 +235,7 @@ $("#btnHideContent").click(function () {
         if ($("#content-place").is(':visible')) {
             $("#btnHideContent").html("Hide Description");
         } else {
-            $("#btnHideContent").html("Show " + placeSelected + " Description" );
+            $("#btnHideContent").html("Show " + placeSelected + " Description");
         }
     });
 });
