@@ -37,7 +37,7 @@ function fetchCountryData(placeCountry) {
         });
 
         $(".country-info").html(`<div class"info">
-                    <p> Name: ${name} <p>
+                    <p> Country: ${name} <p>
                     <p> Capital: ${capital} </p>
                     <p> Lat. Long.: ${latlng} <p>
                     <p> Calling Code: ${callingCodes} <p>
@@ -45,8 +45,10 @@ function fetchCountryData(placeCountry) {
                     <p> Borders: ${borders} <p>
                     <p> Population: ${population} <p>
                     <img src = ${flag} alt= ${name} width="200" height="100"/>
+                    <p>Font:
+                        <a class="country-font-link" href="https://restcountries.eu/rest/v2/alpha/${placeCountry}" target="_blank"> Rest Countries EU <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                    </p>
                 </div>`);
-
     }
 
 }
