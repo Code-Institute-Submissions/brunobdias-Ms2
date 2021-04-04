@@ -35,13 +35,16 @@ function fetchCountryData(placeCountry) {
             borders,
             flag
         });
+        
+        //CREDIT https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
+        population = new Intl.NumberFormat().format(population);
 
         $(".country-info").html(`<div class"info">
                     <p> Country: ${name} <p>
                     <p> Capital: ${capital} </p>
-                    <p> Lat. Long.: ${latlng} <p>
-                    <p> Calling Code: ${callingCodes} <p>
-                    <p> Timezone: ${timezones} <p>
+                    <p> Latitude & Longitude: <br>${latlng}<p>
+                    <p> Calling Code: (${callingCodes}) <p>
+                    <p> Time Zone: ${timezones} <p>
                     <p> Borders: ${borders} <p>
                     <p> Population: ${population} <p>
                     <img src = ${flag} alt= ${name} width="200" height="100"/>
