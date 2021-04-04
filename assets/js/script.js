@@ -34,17 +34,21 @@ $.fn.preloadImages = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
-        $("#navbar").css("padding", "0.5rem 0.5rem");
+        $("#navbar").css("padding", "0.1rem 0.1rem");
         $("#brand").css("fontSize", "1.5rem");
+        $("#brand").css("margin-left", "1.5rem");
         $("#brand").css("weight", "bold");
-        $("#logo").attr("src", "assets/images/navlogo.png");
+        $("#brand").text("The 7 Wonders of the Modern World");
+        $("#logo").attr("src", "assets/images/navlogo.png").fadeIn(1000);
 
     } else {
         $("#navbar").css("opacity", "0.85");
         $("#navbar").css("padding", "2rem 0.5rem");
         $("#brand").css("fontSize", "2rem");
+        $("#brand").css("margin-left", "5rem");
         $("#brand").css("weight", "bold");
-        $("#logo").attr("src", "assets/images/navlogo-lg.png");
+        $("#brand").html(`The 7 Wonders<br> of the Modern World`);
+        $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
     }
 }
 
