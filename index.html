@@ -113,16 +113,28 @@
         </div>
 
 
-        <div class="Place Description">
-            <h2 id="place-h2"></h2>
-            <p id="content-p"></p>
-            <p>Font: 
-                <a class="font-link" href="" target="_blank"></a>
-            </p>
-
-            <div id="countries-info" class="country-info">
-
+        <div class="place-description">
+            <div id="placeDescription" class="description">
+                <h2 id="place-h2"></h2>
+                <p id="content-place"></p>
+                <p>Font:
+                    <a class="font-link" href="" target="_blank"></a>
+                </p>
             </div>
+            <div class="d-grid gap-2">
+                <button id="btnHideContent" type="button" class="btn btn-secondary btn-toggle">Hide Description</button>
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button id="btnShowCountryInfo" type="button" class="btn btn-secondary btn-toggle mt-1">Country
+                    Details</button>
+            </div>
+            <div id="countries-info" class="country-details">
+                <div class="country-info">
+
+                </div>
+            </div>
+
             <!--
             <div class="place-img"><img src="assets/images/colosseum.jpg" alt="colosseum"></div>
             -->
@@ -161,7 +173,7 @@
                 </ul>
             </div>
         </div>
-        
+
     </section>
 
     <footer class="container-fluid footer color-default">
@@ -212,8 +224,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>    
-    <script src="assets/js/restCountries.js"></script>    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/restCountries.js"></script>
     <script src="assets/js/leaflet.js"></script>
 </body>
 

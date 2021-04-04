@@ -1,3 +1,5 @@
+var placeSelected = "";
+
 //When load the page, preload Images and fill the Colosseum data 
 $(window).on("load", function () {
     $(['assets/images/colosseum-lg-bkg.jpg',
@@ -8,7 +10,11 @@ $(window).on("load", function () {
         'assets/images/petra-bkg.jpg',
         'assets/images/tajmahal-bkg.jpg'
     ]).preloadImages();
-     $("#btnColosseum").trigger("click");
+    $("#btnColosseum").trigger("click");
+});
+
+$(document).ready(function () {
+    $("#countries-info").toggle();
 });
 
 // When the user scrolls down 80px from the top of the document, 
@@ -184,16 +190,16 @@ $("#btnTajMahal").click(function () {
 });
 
 
-function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink, 
+function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     placeTwitter, placeInstagram, placeFacebook, placeYoutube, placeCountry) {
-
+    placeSelected = place;
     $("body").css("background-image", bkgImgURL).css(
         "background-repeat", "no-repeat").css(
             "background-attachment", "fixed").css(
                 "background-size", "cover");
-    $("#place-h2").text(place);
-    $("#content-p").text(getContent(place));
-    $(".font-link").attr("href", fontLink).html(fontDescription 
+    $("#place-h2").text(placeSelected);
+    $("#content-place").text(getContent(place));
+    $(".font-link").attr("href", fontLink).html(fontDescription
         + ` <i class="fas fa-external-link-alt" aria-hidden="true"></i>`);
     $(".place-link").attr("href", placeLink);
     $(".place-twitter").attr("href", placeTwitter);
@@ -201,7 +207,39 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".place-facebook").attr("href", placeFacebook);
     $(".video-div").html(placeYoutube);
     fetchCountryData(placeCountry);
+    checkPlaceContentVisible();
 };
+
+function checkPlaceContentVisible(){
+    if (!$("#content-place").is(':visible')) {
+            $("#btnHideContent").click();
+        } 
+}
+
+$("#btnHideContent").click(function () {
+    $("#placeDescription").toggle('medium', function () {
+        /*Credit: to Check if content is visible
+        https://stackoverflow.com/questions/15066304/how-to-determine-the-current-state-of-jquery-toggle */
+        if ($("#content-place").is(':visible')) {
+            $("#btnHideContent").html("Hide Description");
+        } else {
+            $("#btnHideContent").html("Show " + placeSelected + " Description" );
+        }
+    });
+});
+
+$("#btnShowCountryInfo").click(function () {
+    $("#countries-info").toggle('medium', function () {
+        /*Credit: to Check if content is visible
+        https://stackoverflow.com/questions/15066304/how-to-determine-the-current-state-of-jquery-toggle */
+        if ($(".country-info").is(':visible')) {
+            $("#btnShowCountryInfo").html("Hide Country Details");
+        } else {
+            $("#btnShowCountryInfo").html("Country Details");
+        }
+    });
+});
+
 
 function getContent(place) {
     if (place === "Colosseum") {
