@@ -34,7 +34,7 @@ $.fn.preloadImages = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
-        $("#navbar").css("padding", "0.1rem 0.1rem");
+        //$("#navbar").css("padding", "0.1rem 0.1rem");
         $("#brand").css("fontSize", "1.5rem");
         $("#brand").css("margin-left", "1rem");
         $("#brand").css("weight", "bold");
@@ -45,17 +45,16 @@ function scrollFunction() {
         $("#navbar").css("opacity", "0.85");
         $("#navbar").css("padding", "2rem 0.5rem");
         $("#brand").css("fontSize", "2rem");
-        $("#brand").css("weight", "bold");
-        $("#brand").html(`The 7 Wonders<br> of the Modern World`);
-        $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
-
+        //CREDIT: https://forum.jquery.com/topic/if-screen-size
         //Control Add to better view on mobile
         if ($(window).width() < 470) {
             $("#brand").css("margin-left", "3rem");
         } else {
             $("#brand").css("margin-left", "5rem");
-        }
-
+        }        
+        $("#brand").css("weight", "bold");
+        $("#brand").html(`The 7 Wonders<br> of the Modern World`);
+        $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
 
     }
 }

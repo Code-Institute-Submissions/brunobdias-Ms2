@@ -163,20 +163,16 @@ a:hover{
             
 }
 
-#player{
-    overflow: auto;
-}
-
 #map { 
     /*height: 12.5rem;
     width: 18.75rem; */
     height: 20rem;
     width: 30rem;
-    overflow: auto; 
 }
 
 .btn-toggle :focus{
     outline: none;
+    box-shadow: none;
 }
 /********************************* FOOTER *********************************/
 
