@@ -16,8 +16,9 @@ function fetchCountryData(placeCountry) {
         capital,
         callingCodes,
         population,
-        //currencies,
+        currencies,
         region,
+        subregion,
         latlng,
         timezones,
         borders,
@@ -28,33 +29,49 @@ function fetchCountryData(placeCountry) {
             capital,
             callingCodes,
             population,
-            //currencies,
+            currencies,
             region,
+            subregion,
             latlng,
             timezones,
             borders,
             flag
         });
-        
-        //CREDIT https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
-        population = new Intl.NumberFormat().format(population);
+                
+        population = formatNumber(population);
+        currencies = setCurrencie(currencies);
 
-        $(".country-info").html(`<div class"info">
-                    <p> Country: ${name} <p>
-                    <p> Capital: ${capital} </p>
-                    <p> Latitude & Longitude: <br>${latlng}<p>
-                    <p> Calling Code: (${callingCodes}) <p>
-                    <p> Time Zone: ${timezones} <p>
-                    <p> Borders: ${borders} <p>
-                    <p> Population: ${population} <p>
-                    <img src = ${flag} alt= ${name} width="200" height="100"/>
+        $(".country-info").html(`
+                <div class="info">
+                    <div class="flag">
+                        <img src= ${flag} alt= ${name}/>
+                    </div>
+                    <p> <strong>Country:</strong> ${name} <p>
+                    <p> <strong>Capital:</strong> ${capital} </p>
+                    <p> <strong>Latitude & Longitude:</strong> <br>${latlng}<p>
+                    <p> <strong>Region:</strong> ${region} </p>
+                    <p> <strong>Subregion:</strong> ${subregion} </p>
+                    <p> <strong>Currency:</strong> ${currencies}</p>
+                    <p> <strong>Calling Code:</strong> +${callingCodes} <p>
+                    <p> <strong>Time Zone:</strong> ${timezones} <p>
+                    <p> <strong>Borders:</strong> <br>${borders} <p>
+                    <p> <strong>Population:</strong> ${population} <p>
                     <p>Font:
                         <a class="country-font-link" href="https://restcountries.eu/rest/v2/alpha/${placeCountry}" target="_blank"> Rest Countries EU <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                     </p>
                 </div>`);
     }
 
+    function setCurrencie(currenciesArray){     
+        return currenciesArray[0].name + " " +  currenciesArray[0].symbol;
+    }
+
+    function formatNumber(pNumber){
+          return new Intl.NumberFormat().format(pNumber);
+          //CREDIT https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
+    }
 }
+
 
 /*
 
