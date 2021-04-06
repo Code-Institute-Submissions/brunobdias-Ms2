@@ -1,5 +1,4 @@
 /********************************* Font/Color-Scheme *********************************/
-
 .color-default{
     background-color: #6b705c;
     color: #ffe8d6;
@@ -35,29 +34,27 @@ a:hover{
 }
 
 /* sample from https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp */
-
 /* Create a sticky/fixed navbar */
 #navbar {
-  background-color: #6b705c;
-  overflow: hidden;
-  padding: 1.5rem 0.5rem; /* Large padding which will shrink on scroll (using JS) */
-  transition: 1s; /* Adds a transition effect when the padding is decreased */
-  opacity: 0.85;
-  position: fixed; /* Sticky/fixed navbar */
-  width: 100%;
-  top: 0; /* At the top */
-  z-index: 99;
+    background-color: #6b705c;
+    overflow: hidden;
+    padding: 1.5rem 0.5rem; /* Large padding which will shrink on scroll (using JS) */
+    transition: 1s; /* Adds a transition effect when the padding is decreased */
+    opacity: 0.85;
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
 }
 
 /* Style the navbar links */
 #navbar a {
-  float: left;
-  text-align: center;
-  /*padding: 1rem;*/
-  text-decoration: none;
-  font-size: 1.12rem;
-  line-height: 1.56rem;
-  border-radius: 0.25rem;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.12rem;
+    line-height: 1.56rem;
+    border-radius: 0.25rem;
 }
 
 #navbar .brand-name {
@@ -65,17 +62,17 @@ a:hover{
 }
 
 #navbar #brand {
-  font-size: 2rem;
-  font-weight: bold;
-  transition: 1s;
-  text-align: center;
-  margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 1s;
+    text-align: center;
+    margin-left: 5rem;
 }
 
 /* Links on mouse-over */
 #navbar a:hover {
-  background-color: #ddbea9;
-  color: #6b705c;
+    background-color: #ddbea9;
+    color: #6b705c;
 }
 
 #logo-link{
@@ -86,11 +83,10 @@ a:hover{
 
 /* Display some links to the right */
 #navbar-right {
-  float: right;
+    float: right;
 }
 
 /*************************** @mediaScreen Navbar ************************/
-
 @media screen and (min-width: 750px) {
     #logo-link{
         display: block;
@@ -103,42 +99,17 @@ a:hover{
     }
 }
 
-/*
-@media screen and (max-width: 750px) {
-    #logo-link{
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
-@media screen and (max-width: 575px) {
-    #brand{
-        color: black; /* Remove this color * /
-        margin-left: 5rem;
-    }
-}
- 
-@media screen and (max-width: 485px) {
-    #brand{
-        color: black; /* Remove this color * /
-        margin-left: 0;
-    }
-}
-*/
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
 @media screen and (min-width: 800px) {
-  #navbar {
-    padding: 1rem 0.5rem !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-  }
-  #navbar a {
-    /*float: none;
-    display: block;*/
-    text-align: center;
-  }
-  #navbar-right {
-    float: none;
-  }
+    #navbar {
+        padding: 1rem 0.5rem !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+        text-align: center;
+    }
+    #navbar-right {
+        float: none;
+    }
 }
 
 @media screen and (min-width: 446px) {
@@ -148,7 +119,6 @@ a:hover{
 }
 
 /********************************* SECTION *********************************/
-
 .place-selector{
     margin-bottom: 1rem;
     margin-top: 15rem;
@@ -163,8 +133,6 @@ a:hover{
 }
 
 #map { 
-    /*height: 12.5rem;
-    width: 18.75rem; */
     height: 20rem;
     width: 30rem;
 }
@@ -186,29 +154,29 @@ a:hover{
     width: 55%;
 }
 
+/*Credit: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
 #btnTop {
-  opacity: 1;
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 1rem; /* Place the button at the bottom of the page */
-  right: 2rem; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 1rem;/* Some padding */
-  border-radius: 50px; /* Rounded corners */
-  font-size: 1rem; /* Increase font size */
- 
+    opacity: 1;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1rem; /* Place the button at the bottom of the page */
+    right: 2rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1rem;/* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
 }
+/* End Credit */
 
 .social-links{
     font-size: 1.4rem;
 }
 
 /********************************* FOOTER *********************************/
-
 .footer{
     margin-bottom: 0;
     opacity: 0.9;
