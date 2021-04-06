@@ -160,7 +160,6 @@ a:hover{
     margin-bottom: 5rem;
     /*CREDIT - https://www.w3schools.com/css/css_overflow.asp*/
     overflow: auto;
-            
 }
 
 #map { 
@@ -187,6 +186,22 @@ a:hover{
     width: 55%;
 }
 
+#btnTop {
+  opacity: 1;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 1rem; /* Place the button at the bottom of the page */
+  right: 2rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1rem;/* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1rem; /* Increase font size */
+ 
+}
 
 /********************************* FOOTER *********************************/
 

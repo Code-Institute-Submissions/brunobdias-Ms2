@@ -29,9 +29,10 @@ $.fn.preloadImages = function () {
     });
 }
 
-//Scroll Sample from
-//https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+//Scroll Function
 function scrollFunction() {
+    //Credit https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+        //Scroll Navbar Shrink
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
         //$("#navbar").css("padding", "0.1rem 0.1rem");
@@ -51,13 +52,29 @@ function scrollFunction() {
             $("#brand").css("margin-left", "3rem");
         } else {
             $("#brand").css("margin-left", "5rem");
-        }        
+        }
         $("#brand").css("weight", "bold");
         $("#brand").html(`The 7 Wonders<br> of the Modern World`);
         $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
 
     }
+
+    // Scroll to Top Button
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
+
+//CREDIT: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+mybutton = document.getElementById("btnTop");
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+//End Credit
 
 //Places button click
 $("#btnColosseum").click(function () {
@@ -250,7 +267,6 @@ $("#btnShowCountryInfo").click(function () {
         }
     });
 });
-
 
 function getContent(place) {
     if (place === "Colosseum") {
