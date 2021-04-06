@@ -19,6 +19,19 @@ a:hover{
     color: #ddbea9;
 }
 
+/**Credit https://stackoverflow.com/questions/20751937/transition-background-color-via-slide-animation**/
+.btn {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, gray 50%, green 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+}
+
+.btn:hover {
+    background-position: 0 -100%;
+}
+
 /********************************* HEADING *********************************/
 
 /*************************** navbar ************************/
