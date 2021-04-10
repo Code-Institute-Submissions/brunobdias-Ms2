@@ -78,7 +78,6 @@ function topFunction() {
 
 //Places button click
 $("#btnColosseum").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1591014979417-20f9a787a4da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1339&q=80)', //bkgImgURL
     changePlace('url(assets/images/colosseum-bkg.jpg)', //bkgImgURL
         "Colosseum", //place 
         "https://parcocolosseo.it/en/area/the-colosseum/",//fontLink
@@ -98,7 +97,6 @@ $("#btnColosseum").click(function () {
 });
 
 $("#btnChichen").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1348&q=80)', //bkgImgURL
     changePlace('url(assets/images/chichen-bkg.jpg)', //bkgImgURL
         "Chichén Itzá", //place 
         "https://www.inah.gob.mx/zonas/146-zona-arqueologica-de-chichen-itza",//fontLink
@@ -118,7 +116,6 @@ $("#btnChichen").click(function () {
 });
 
 $("#btnMachuPichu").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1526392060635-9d6019884377?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)', //bkgImgURL
     changePlace('url(assets/images/machupicchu-bkg.jpg)', //bkgImgURL 
         "Machu Picchu", //place 
         "https://en.wikipedia.org/wiki/Machu_Picchu",//fontLink
@@ -138,7 +135,6 @@ $("#btnMachuPichu").click(function () {
 });
 
 $("#btnChrist").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1539053197169-395aea7a3bc3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)', //bkgImgURL
     changePlace('url(assets/images/christ-bkg.jpg)', //bkgImgURL
         "Christ The Redeemer", //place 
         "http://visit.rio/en/que_fazer/christtheredeemer/",//fontLink
@@ -158,7 +154,6 @@ $("#btnChrist").click(function () {
 });
 
 $("#btnGreatWall").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1558981012-236ee58eb5c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1276&q=80)', //bkgImgURL
     changePlace('url(assets/images/great-wall-bkg.jpg)', //bkgImgURL
         "The Great Wall of China", //place 
         "https://en.wikipedia.org/wiki/Great_Wall_of_China",//fontLink
@@ -178,7 +173,6 @@ $("#btnGreatWall").click(function () {
 });
 
 $("#btnPetra").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1605647268682-3a555008c445?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80)', //bkgImgURL
     changePlace('url(assets/images/petra-bkg.jpg)', //bkgImgURL
         "Ruins of Petra", //place 
         "http://www.visitpetra.jo/Pages/viewpage.aspx?pageID=124",//fontLink
@@ -198,7 +192,6 @@ $("#btnPetra").click(function () {
 });
 
 $("#btnTajMahal").click(function () {
-    //changePlace('url(https://images.unsplash.com/photo-1564507592333-c60657eea523?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80)', //bkgImgURL
     changePlace('url(assets/images/tajmahal-bkg.jpg)', //bkgImgURL
         "Taj Mahal", //place 
         "https://www.tajmahal.gov.in/creation-history-of-taj-mahal.aspx",//fontLink
@@ -213,6 +206,25 @@ $("#btnTajMahal").click(function () {
             autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
         "ind", //placeCountry
+    );
+    changeMapLocation("Taj Mahal");
+});
+
+$("#btnAbout").click(function () {
+    changePlace('url(assets/images/tajmahal-bkg.jpg)', //bkgImgURL
+        "About", //place 
+        "https://en.wikipedia.org/wiki/New7Wonders_of_the_World",//fontLink
+        "Wikipedia", //fontDescription
+        "https://en.wikipedia.org/wiki/New7Wonders_of_the_World", //placeLink
+        "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
+        "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
+        "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
+        `<iframe width="480" height="320"
+            src="https://www.youtube.com/embed/N-XNGXXHNIs" 
+            title="Taj Mahal" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+        "", //placeCountry
     );
     changeMapLocation("Taj Mahal");
 });
@@ -356,6 +368,23 @@ function getContent(place) {
             "White inlays are used in sandstone buildings, and dark or black inlays on the whitemarbles. Mortared areas of the marble buildings have been stained or " +
             "painted in a contrasting colour, creating geometric patterns of considerable complexity. Floors and walkways use contrasting tiles or blocks in tessellation patterns. " +
             "The inlay stones are of yellow marble, jasper and jade, polished and levelled to the surface of the walls."
+        )
+    } else if (place === "About") {
+        return ("New 7 Wonders of the World was a campaign started in 2000 to choose Wonders of the World from a selection of 200 existing monuments. The popularity poll via free " +
+            "Web-based voting and small amounts of telephone voting was led by Canadian-Swiss Bernard Weber and organized by the New 7 Wonders Foundation (N7W) based in Zurich, Switzerland, " +
+            "with winners announced on 7 July 2007 in Lisbon, at Estádio da Luz. The poll was considered unscientific partly because it was possible for people to cast multiple " +
+            "votes. According to John Zogby, founder and current President/CEO of the Utica, New York-based polling organization Zogby International, New 7 Wonders Foundation drove " +
+            "'the largest poll on record'. The program drew a wide range of official reactions. Some countries touted their finalist and tried to get more votes cast for it, while " +
+            "others downplayed or criticized the contest. After supporting the New 7 Wonders Foundation at the beginning of the campaign by providing advice on nominee selection, " +
+            "the United Nations Educational, Scientific, and Cultural Organization (UNESCO), by its bylaws having to record all and give equal status to world heritage sites, " +
+            "distanced itself from the undertaking in 2001 and again in 2007. " +
+            "The seven winners were chosen from 21 candidates, which had been whittled down from 77 choices by a panel in 2006." +
+            "The New 7 Wonders Foundation, established in 2001, relied on private donations and the sale of broadcast rights and" +
+            "received no public funding. After the final announcement, New 7 Wonders said it did not earn anything from the exercise" +
+            "and barely recovered its investment." +
+            "Although N7W describes itself as a not-for-profit organization, the company behind it—the New Open World Corporation (NOWC)—is" +
+            "a commercial business. All licensing and sponsorship money is paid to NOWC." +
+            "The foundation ran two subsequent programs: New 7 Wonders of Nature, the subject of voting until 2011, and New7Wonders Cities, which ended in 2014."
         )
     };
 }

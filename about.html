@@ -30,11 +30,11 @@
 
         <nav id="navbar" class="navbar sticky-top navbar-expand-sm color-default">
             <div id="navbar-top-container" class="container-fluid navbar">
-                <a id="logo-link" class="navbar-brand color-default" href="">
+                <a id="logo-link" class="navbar-brand color-default" href="index.html">
                     <img id="logo" class="logo" src="assets/images/navlogo-lg.png" alt="">
                 </a>
                 <div class="brand-name">
-                    <a id="brand" class="brand-name" href=""> The 7 Wonders<br> of the Modern World </a>
+                    <a id="brand" class="brand-name" href="index.html"> The 7 Wonders<br> of the Modern World </a>
                 </div>
             </div>
             <div class="container-fluid navbar row">
@@ -47,10 +47,10 @@
                     <div class="d-sm-flex justify-content-sm-end collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a id="btnAbout" class="nav-link active" aria-current="page" href="about.html">About</a>
                             </li>
                         </ul>
                     </div>
@@ -59,49 +59,16 @@
         </nav>
 
     </header>
-
-    <!--Section Place Selector -->
     <section class="container-sm section place-selector color-section text-center">
-        <button id="btnColosseum" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnColosseumIco.png" alt="Colosseum">
-            Colosseum
-        </button>
-        <button id="btnChichen" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChichenIco.png" alt="Chichen Itza">
-            Chichén Itzá
-        </button>
-        <button id="btnMachuPichu" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnMachu-PicchuIco.png" alt="Machupicchu">
-            Machu Picchu
-        </button>
-        <button id="btnChrist" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChristIco.png" alt="Christ Redeemer">
-            Christ the Redeemer
-        </button>
-        <button id="btnGreatWall" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChinaIco.png" alt="The Great Wall">
-            The Great Wall of China
-        </button>
-        <button id="btnPetra" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnPetraIco.png" alt="Ruins of Petra">
-            Ruins of Petra
-        </button>
-        <button id="btnTajMahal" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnTaj-MahalIco.png" alt="Taj-Mahal">
-            Taj-Mahal
-        </button>
+        <div class="heading-about-section"><h2>About the 7 Wonders of Modern World </h2></div>
     </section>
 
     <!--Section Content -->
     <section class="container-sm section content color-section">
         <div class="container-sm video-map text-center">
             <ul class="list-inline">
-                <li class="list-inline-item mt-3">
-                    <div id="player" class="video-div">
-                    </div>
-                </li>
                 <li class="list-inline-item">
-                    <div id="map" class="map-div"></div>
+                    <div id="map" class="map-div-about"></div>
                 </li>
             </ul>
         </div>
