@@ -173,14 +173,14 @@ a:hover{
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 1rem; /* Place the button at the bottom of the page */
-    right: 2rem; /* Place the button 30px from the right */
+    right: 2rem; /* Place the button 2rem from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 1rem;/* Some padding */
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 2rem; /* Rounded corners */
     font-size: 1rem; /* Increase font size */
 }
 /* End Credit */
