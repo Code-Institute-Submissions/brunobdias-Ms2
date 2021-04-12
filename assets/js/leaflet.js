@@ -16,6 +16,9 @@ let map = L.map("map", {
     zoom: 0, // smaller numbers = zoomOut // larger numbers = zoomIn
     minZoom: 2.3, // max zoomOut permitted
     maxZoom: 18, // max zoomIn permitted
+    maxBounds: [// stops map from infinite scrolling at edges
+        [-75, -190],
+        [90, 190]],
     maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
 
@@ -80,6 +83,12 @@ const mapLocations = [
         center: [27.175316584322186, 78.04217438466947], //India
         zoom: 4,
         pin: [27.175316584322186, 78.04217438466947],
+    },
+
+    {
+        location: "About",
+        center: [23.5, 12], //About
+        zoom: 0,
     },
 ];
 /*
