@@ -32,7 +32,7 @@ $.fn.preloadImages = function () {
 //Scroll Function
 function scrollFunction() {
     //Credit https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
-        //Scroll Navbar Shrink
+    //Scroll Navbar Shrink
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
         $("#navbar").css("padding", "0");
@@ -43,8 +43,12 @@ function scrollFunction() {
         $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeOut(1000);
         $("#logo").css("display", "none");
         $("#logo").css("visibility", "hidden");
-        $("#logo").css("transition", "1s");      
-        $(".place-selector").css("top", "5.5rem");
+        $("#logo").css("transition", "1s");
+        if ($(window).width() < 428) {
+            $(".place-selector").css("top", "7rem");
+        } else {
+            $(".place-selector").css("top", "5.5rem");
+        }
         //$(".place-selector").css("Opacity", "1");
 
     } else {
@@ -63,7 +67,7 @@ function scrollFunction() {
 
         $("#brand").css("weight", "bold");
         $("#brand").html(`The 7 Wonders<br> of the Modern World`);
-       
+
         if ($(window).width() >= 750) {
             $("#navbar").css("padding", "2rem 0.5rem");
             $("#brand").css("fontSize", "2rem");
@@ -72,7 +76,7 @@ function scrollFunction() {
             $("#logo").css("visibility", "visible");
             $("#logo").css("transition", "1s");
         }
-        
+
         $(".place-selector").css("top", "11rem");
     }
 
