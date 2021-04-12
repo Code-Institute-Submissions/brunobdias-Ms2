@@ -107,6 +107,12 @@ a:hover {
   .navbar-nav {
     display: flex;
   }
+  #navbar #brand {
+    font-size: 2rem;
+  }
+  .place-selector {
+    top: 11rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -118,6 +124,11 @@ a:hover {
   #navbar #brand {
     text-align: center;
     margin-left: 5rem;
+    font-size: 2rem;
+  }
+  
+  .place-selector {
+    top: 11rem;
   }
 }
 
@@ -134,11 +145,20 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 1080) {
+  #navbar #brand {
+    font-size: 2rem;
+  }
+  .place-selector {
+    top: 11rem;
+  }
+}
+
 /********************************* SECTION *********************************/
 .place-selector {
   position: sticky;
   margin-bottom: 1rem;
-  top: 10rem;
+  top: 11rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
   z-index: 98;
@@ -148,7 +168,7 @@ a:hover {
   margin-bottom: 5rem;
   margin-top: 12rem;
   padding-top: 1rem;
-  }
+}
 
 ul {
   list-style-type: none;

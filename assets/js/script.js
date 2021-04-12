@@ -35,17 +35,24 @@ function scrollFunction() {
         //Scroll Navbar Shrink
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#navbar").css("opacity", "1");
-        //$("#navbar").css("padding", "0.1rem 0.1rem");
-        $("#brand").css("fontSize", "1.5rem");
+        $("#navbar").css("padding", "0");
+        $("#brand").css("fontSize", "1.4rem");
         $("#brand").css("margin-left", "1rem");
         $("#brand").css("weight", "bold");
         $("#brand").text("The 7 Wonders of the Modern World");
-        $("#logo").attr("src", "assets/images/navlogo.png").fadeIn(1000);
+        $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeOut(1000);
+        $("#logo").css("display", "none");
+        $("#logo").css("visibility", "hidden");
+        $("#logo").css("transition", "1s");      
+        $(".place-selector").css("top", "5.5rem");
+        //$(".place-selector").css("Opacity", "1");
 
     } else {
-        $("#navbar").css("opacity", "0.85");
-        $("#navbar").css("padding", "2rem 0.5rem");
         $("#brand").css("fontSize", "2rem");
+        $("#navbar").css("opacity", "0.85");
+        $("#navbar").css("padding", "1rem 0.5rem");
+        $(".place-selector").css("top", "9rem");
+
         //CREDIT: https://forum.jquery.com/topic/if-screen-size
         //Control Add to better view on mobile
         if ($(window).width() < 470) {
@@ -53,10 +60,20 @@ function scrollFunction() {
         } else {
             $("#brand").css("margin-left", "5rem");
         }
+
         $("#brand").css("weight", "bold");
         $("#brand").html(`The 7 Wonders<br> of the Modern World`);
-        $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(1000);
-
+       
+        if ($(window).width() >= 750) {
+            $("#navbar").css("padding", "2rem 0.5rem");
+            $("#brand").css("fontSize", "2rem");
+            $("#logo").attr("src", "assets/images/navlogo-lg.png").fadeIn(100);
+            $("#logo").css("display", "block");
+            $("#logo").css("visibility", "visible");
+            $("#logo").css("transition", "1s");
+        }
+        
+        $(".place-selector").css("top", "11rem");
     }
 
     // Scroll to Top Button
@@ -248,6 +265,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".video-div").html(placeYoutube);
     fetchCountryData(placeCountry);
     checkPlaceContentVisible();
+    $("#btnTop").click();
 };
 
 function checkPlaceContentVisible() {
