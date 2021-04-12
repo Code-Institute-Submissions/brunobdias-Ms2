@@ -110,11 +110,12 @@ $("#btnColosseum").click(function () {
         "http://www.twitter.com/parcocolosseo", //placeTwitter
         "http://www.instagram.com/parcocolosseo", //placeInstagram
         "http://www.facebook.com/ParcoColosseo", //placeFacebook
+        "https://www.youtube.com/channel/UCp1G517hecvSuC4nvGNOHVQ",//placeYoutube
         `<iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/56tlOtVn40c" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>`, //placeYoutube
+            allowfullscreen></iframe>`, //iframeYoutube
         "ita", //placeCountry
     );
     changeMapLocation("Colosseum");
@@ -129,11 +130,12 @@ $("#btnChichen").click(function () {
         "https://twitter.com/INAHmx", //placeTwitter
         "https://www.instagram.com/inahmx/", //placeInstagram
         "https://www.facebook.com/INAHmx/", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/TQEg4P9Mmio" 
             title="Chichén Itzá" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "mex", //placeCountry
     );
     changeMapLocation("Chichén Itzá");
@@ -148,11 +150,12 @@ $("#btnMachuPichu").click(function () {
         "https://twitter.com/search?q=%23machupicchu&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/machupicchu/", //placeInstagram
         "https://www.facebook.com/hashtag/machupicchu", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/_hbRXmSzK38" 
             title="Machu Picchu" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "per", //placeCountry
     );
     changeMapLocation("Machu Picchu");
@@ -167,11 +170,12 @@ $("#btnChrist").click(function () {
         "https://twitter.com/cristoredentor", //placeTwitter
         "https://www.instagram.com/cristoredentor.rio/", //placeInstagram
         "https://www.facebook.com/cristoredentoroficial/", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/fA7kQn-l6T4" 
             title="Christ The Redeemer" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "bra", //placeCountry
     );
     changeMapLocation("Christ The Redeemer");
@@ -186,11 +190,12 @@ $("#btnGreatWall").click(function () {
         "https://twitter.com/search?q=The%20great%20wall%20of%20china&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/thegreatwallofchina", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/0aeO98y6vp0" 
             title="The Great Wall of China" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "chn", //placeCountry
     );
     changeMapLocation("The Great Wall of China");
@@ -205,11 +210,12 @@ $("#btnPetra").click(function () {
         "https://twitter.com/visitpetra", //placeTwitter
         "https://www.instagram.com/explore/tags/visitpetra/", //placeInstagram
         "https://www.facebook.com/PetraVisit", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/JFA8oMBCNUA" 
             title="Ruins of Petra" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "jor", //placeCountry
     );
     changeMapLocation("Ruins of Petra");
@@ -224,11 +230,12 @@ $("#btnTajMahal").click(function () {
         "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/N-XNGXXHNIs" 
             title="Taj Mahal" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //iframeYoutube
         "ind", //placeCountry
     );
     changeMapLocation("Taj Mahal");
@@ -243,12 +250,13 @@ $("#btnAbout").click(function () {
         "https://twitter.com/new7wonders", //placeTwitter
         "https://www.instagram.com/explore/tags/modernwonders/", //placeInstagram
         "https://www.facebook.com/The-seven-new-wonders-of-the-modern-world-100864461551771/", //placeFacebook
+        "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
         `<iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/7Dbuc6vIRnE" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>`, //placeYoutube
+            allowfullscreen></iframe>`, //iframeYoutube
         "", //placeCountry
     );
     changeMapLocation("About");
@@ -256,7 +264,7 @@ $("#btnAbout").click(function () {
 
 
 function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
-    placeTwitter, placeInstagram, placeFacebook, placeYoutube, placeCountry) {
+    placeTwitter, placeInstagram, placeFacebook, placeYoutube, iframeYoutube, placeCountry) {
     placeSelected = place;
     $("body").css("background-image", bkgImgURL).css(
         "background-repeat", "no-repeat").css(
@@ -270,7 +278,8 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".place-twitter").attr("href", placeTwitter);
     $(".place-instagram").attr("href", placeInstagram);
     $(".place-facebook").attr("href", placeFacebook);
-    $(".video-div").html(placeYoutube);
+    $(".place-youtube").attr("href", placeYoutube);
+    $(".video-div").html(iframeYoutube);
     checkPlaceContentVisible();
     $("#btnTop").click();
 
@@ -278,7 +287,6 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
         $("#btnShowCountryInfo").css("visibility", "hidden");
     } else {
         $("#btnShowCountryInfo").css("visibility", "visible");
-        console.log("fetch country");
         fetchCountryData(placeCountry);
     }
 };
