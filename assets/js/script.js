@@ -10,7 +10,10 @@ $(window).on("load", function () {
         'assets/images/petra-bkg.jpg',
         'assets/images/tajmahal-bkg.jpg'
     ]).preloadImages();
-    $("#btnColosseum").trigger("click");
+
+    //$("#btnColosseum").trigger("click");
+    $("#btnAbout").trigger("click");
+
 });
 
 $(document).ready(function () {
@@ -237,17 +240,18 @@ $("#btnAbout").click(function () {
         "https://en.wikipedia.org/wiki/New7Wonders_of_the_World",//fontLink
         "Wikipedia", //fontDescription
         "https://en.wikipedia.org/wiki/New7Wonders_of_the_World", //placeLink
-        "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
-        "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
-        "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
+        "https://twitter.com/new7wonders", //placeTwitter
+        "https://www.instagram.com/explore/tags/modernwonders/", //placeInstagram
+        "https://www.facebook.com/The-seven-new-wonders-of-the-modern-world-100864461551771/", //placeFacebook
         `<iframe width="100%" height="100%" 
-            src="https://www.youtube.com/embed/N-XNGXXHNIs" 
-            title="Taj Mahal" frameborder="0" allow="accelerometer; 
-            autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen></iframe>`, //placeYoutube
+            src="https://www.youtube.com/embed/7Dbuc6vIRnE" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>`, //placeYoutube
         "", //placeCountry
     );
-    changeMapLocation("Taj Mahal");
+    changeMapLocation("About");
 });
 
 
@@ -267,9 +271,16 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".place-instagram").attr("href", placeInstagram);
     $(".place-facebook").attr("href", placeFacebook);
     $(".video-div").html(placeYoutube);
-    fetchCountryData(placeCountry);
     checkPlaceContentVisible();
     $("#btnTop").click();
+
+    if (place == "About"){
+        $("#btnShowCountryInfo").css("visibility", "hidden");
+    } else {
+        $("#btnShowCountryInfo").css("visibility", "visible");
+        console.log("fetch country");
+        fetchCountryData(placeCountry);
+    }
 };
 
 function checkPlaceContentVisible() {
