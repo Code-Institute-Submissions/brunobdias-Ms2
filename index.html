@@ -1,237 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
-        type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
     <title>7 Wonders of Modern World</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-
-        <nav id="navbar" class="navbar sticky-top navbar-expand-sm color-default">
-            <div id="navbar-top-container" class="container-fluid navbar">
-                <a id="logo-link" class="navbar-brand color-default" href="">
-                    <img id="logo" class="logo" src="assets/images/navlogo-lg.png" alt="">
-                </a>
-                <div class="brand-name">
-                    <a id="brand" class="brand-name" href=""> The 7 Wonders<br> of the Modern World </a>
-                </div>
+      <nav id="navbar" class="navbar sticky-top navbar-expand-sm color-default">
+        <div id="navbar-top-container" class="container-fluid navbar">
+          <a id="logo-link" class="navbar-brand color-default" href="">
+            <img
+              id="logo"
+              class="logo"
+              src="assets/images/navlogo-lg.png"
+              alt=""
+            />
+          </a>
+          <div class="brand-name">
+            <a id="brand" class="brand-name" href="">
+              The 7 Wonders<br />
+              of the Modern World
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid navbar row">
+          <div id="navbar-links" class="navbar-links">
+            <button
+              class="navbar-toggler collapsed color-default"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
+            <div
+              class="d-sm-flex justify-content-sm-end collapse navbar-collapse"
+              id="navbarCollapse"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href=""
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
             </div>
-            <div class="container-fluid navbar row">
-                <div id="navbar-links" class="navbar-links">
-                    <button class="navbar-toggler collapsed color-default" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button>
-                    <div class="d-sm-flex justify-content-sm-end collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--Section Place Selector -->
-    <section class="container-sm section place-selector color-section text-center">
-        <button id="btnColosseum" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnColosseumIco.png" alt="Colosseum">
-            Colosseum
-        </button>
-        <button id="btnChichen" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChichenIco.png" alt="Chichen Itza">
-            Chichén Itzá
-        </button>
-        <button id="btnMachuPichu" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnMachu-PicchuIco.png" alt="Machupicchu">
-            Machu Picchu
-        </button>
-        <button id="btnChrist" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChristIco.png" alt="Christ Redeemer">
-            Christ the Redeemer
-        </button>
-        <button id="btnGreatWall" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnChinaIco.png" alt="The Great Wall">
-            The Great Wall of China
-        </button>
-        <button id="btnPetra" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnPetraIco.png" alt="Ruins of Petra">
-            Ruins of Petra
-        </button>
-        <button id="btnTajMahal" type="button" class="btn btn-secondary btn-places mb-1">
-            <img src="assets/images/btnTaj-MahalIco.png" alt="Taj-Mahal">
-            Taj-Mahal
-        </button>
+    <section
+      class="container-sm section place-selector color-section text-center"
+    >
+      <button
+        id="btnColosseum"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnColosseumIco.png" alt="Colosseum" />
+        Colosseum
+      </button>
+      <button
+        id="btnChichen"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnChichenIco.png" alt="Chichen Itza" />
+        Chichén Itzá
+      </button>
+      <button
+        id="btnMachuPichu"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnMachu-PicchuIco.png" alt="Machupicchu" />
+        Machu Picchu
+      </button>
+      <button
+        id="btnChrist"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnChristIco.png" alt="Christ Redeemer" />
+        Christ the Redeemer
+      </button>
+      <button
+        id="btnGreatWall"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnChinaIco.png" alt="The Great Wall" />
+        The Great Wall of China
+      </button>
+      <button
+        id="btnPetra"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnPetraIco.png" alt="Ruins of Petra" />
+        Ruins of Petra
+      </button>
+      <button
+        id="btnTajMahal"
+        type="button"
+        class="btn btn-secondary btn-places mb-1"
+      >
+        <img src="assets/images/btnTaj-MahalIco.png" alt="Taj-Mahal" />
+        Taj-Mahal
+      </button>
     </section>
 
     <!--Section Content -->
     <section class="container-sm section content color-section">
-        <div class="container-sm video-map text-center">
-            <ul class="list-inline">
-                <li class="list-inline-item mt-3">
-                    <div id="player" class="video-div">
-                    </div>
-                </li>
-                <li class="list-inline-item">
-                    <div id="map" class="map-div"></div>
-                </li>
-            </ul>
+      <div class="container-sm video-map text-center">
+        <ul>
+          <li class="full-width mt-3">
+            <div id="player" class="video-div"></div>
+          </li>
+          <li class="full-width mt-1">
+            <div class="map-container">
+              <div id="map" class="map-div"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="place-description">
+        <div id="placeDescription" class="description">
+          <h2 id="place-h2"></h2>
+          <p id="content-place"></p>
+          <p>
+            Font:
+            <a class="font-link" href="" target="_blank"></a>
+          </p>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            id="btnHideContent"
+            type="button"
+            class="btn btn-secondary btn-toggle"
+          >
+            Hide Description
+          </button>
         </div>
 
+        <div class="d-grid gap-2">
+          <button
+            id="btnShowCountryInfo"
+            type="button"
+            class="btn btn-secondary btn-toggle mt-1"
+          >
+            Country Details
+          </button>
+        </div>
+        <div id="countries-info" class="country-details">
+          <div class="country-info">
+            <p>
+              Font:
+              <a class="country-font-link" href="" target="_blank"></a>
+            </p>
+          </div>
+        </div>
 
-        <div class="place-description">
-            <div id="placeDescription" class="description">
-                <h2 id="place-h2"></h2>
-                <p id="content-place"></p>
-                <p>Font:
-                    <a class="font-link" href="" target="_blank"></a>
-                </p>
-            </div>
-            <div class="d-grid gap-2">
-                <button id="btnHideContent" type="button" class="btn btn-secondary btn-toggle">Hide Description</button>
-            </div>
-
-            <div class="d-grid gap-2">
-                <button id="btnShowCountryInfo" type="button" class="btn btn-secondary btn-toggle mt-1">Country
-                    Details</button>
-            </div>
-            <div id="countries-info" class="country-details">
-                <div class="country-info">
-                    <p>Font:
-                        <a class="country-font-link" href="" target="_blank"></a>
-                    </p>
-                </div>
-            </div>
-
-            <!--
+        <!--
             <div class="place-img"><img src="assets/images/colosseum.jpg" alt="colosseum"></div>
             -->
-            <div class="col-sm-12 col-md-12 text-center place social-links mt-2">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a class="place-link" href="" target="_blank">
-                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                            <span class="sr-only">Place Link</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="place-twitter" href="" target="_blank">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="place-instagram" href="" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="place-facebook" href="" target="_blank">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="place-youtube" href="" target="_blank">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-sm-12 col-md-12 text-center place social-links mt-2">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a class="place-link" href="" target="_blank">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                <span class="sr-only">Place Link</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="place-twitter" href="" target="_blank">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="place-instagram" href="" target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="place-facebook" href="" target="_blank">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="place-youtube" href="" target="_blank">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">Youtube</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <section class="btn-to-top">
-        <!--Credit: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
-        <div class="back-top">
-            <button onclick="topFunction()" id="btnTop" class="btn btn-secondary"
-                title="Go to top"><i class="fas fa-arrow-up"></i></button>
-        </div>
+      <!--Credit: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+      <div class="back-top">
+        <button
+          onclick="topFunction()"
+          id="btnTop"
+          class="btn btn-secondary"
+          title="Go to top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
     </section>
-    
+
     <!--<div class="section-bkg"></div>-->
-    
+
     <footer class="container-fluid footer color-default">
-        <div class="row footer-items">
-            <div class="col-sm-12 col-md-12 text-center social-links">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="https://github.com/brunobdias" target="_blank">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/hashtag/" target="_blank">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="row footer-items">
+        <div class="col-sm-12 col-md-12 text-center social-links">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a href="https://github.com/brunobdias" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span class="sr-only">Github</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/hashtag/" target="_blank">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">Youtube</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="col-sm-12 col-md-12 text-center signature">
-            developed by Bruno Dias
-        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 text-center signature">
+        developed by Bruno Dias
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/restCountries.js"></script>
     <script src="assets/js/leaflet.js"></script>
-</body>
-
+  </body>
 </html>

@@ -86,7 +86,7 @@ $("#btnColosseum").click(function () {
         "http://www.twitter.com/parcocolosseo", //placeTwitter
         "http://www.instagram.com/parcocolosseo", //placeInstagram
         "http://www.facebook.com/ParcoColosseo", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe position: absolute; top: 0; left: 0; width="100%" height="100%"  
             src="https://www.youtube.com/embed/fTVXfRooqLg" 
             title="Colosseum" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -105,7 +105,7 @@ $("#btnChichen").click(function () {
         "https://twitter.com/INAHmx", //placeTwitter
         "https://www.instagram.com/inahmx/", //placeInstagram
         "https://www.facebook.com/INAHmx/", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/TQEg4P9Mmio" 
             title="Chichén Itzá" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -124,7 +124,7 @@ $("#btnMachuPichu").click(function () {
         "https://twitter.com/search?q=%23machupicchu&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/machupicchu/", //placeInstagram
         "https://www.facebook.com/hashtag/machupicchu", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/_hbRXmSzK38" 
             title="Machu Picchu" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -143,7 +143,7 @@ $("#btnChrist").click(function () {
         "https://twitter.com/cristoredentor", //placeTwitter
         "https://www.instagram.com/cristoredentor.rio/", //placeInstagram
         "https://www.facebook.com/cristoredentoroficial/", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/fA7kQn-l6T4" 
             title="Christ The Redeemer" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -162,7 +162,7 @@ $("#btnGreatWall").click(function () {
         "https://twitter.com/search?q=The%20great%20wall%20of%20china&src=typeahead_click&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/thegreatwallofchina", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/0aeO98y6vp0" 
             title="The Great Wall of China" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -181,7 +181,7 @@ $("#btnPetra").click(function () {
         "https://twitter.com/visitpetra", //placeTwitter
         "https://www.instagram.com/explore/tags/visitpetra/", //placeInstagram
         "https://www.facebook.com/PetraVisit", //placeFacebook
-        `<iframe width="480" height="320" 
+        `<iframe width="100%" height="100%"  
             src="https://www.youtube.com/embed/JFA8oMBCNUA" 
             title="Ruins of Petra" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -200,7 +200,7 @@ $("#btnTajMahal").click(function () {
         "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
-        `<iframe width="480" height="320"
+        `<iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/N-XNGXXHNIs" 
             title="Taj Mahal" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
@@ -219,7 +219,7 @@ $("#btnAbout").click(function () {
         "https://twitter.com/search?q=%23tajmahal&src=typed_query&f=live", //placeTwitter
         "https://www.instagram.com/explore/tags/greatwallofchina/", //placeInstagram
         "https://www.facebook.com/hashtag/tajmahal", //placeFacebook
-        `<iframe width="480" height="320"
+        `<iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/N-XNGXXHNIs" 
             title="Taj Mahal" frameborder="0" allow="accelerometer; 
             autoplay; clipboard-write; encrypted-media; 
