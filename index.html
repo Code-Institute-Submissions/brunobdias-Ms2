@@ -17,24 +17,25 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <!-- Leaflet -->
+    <!-- Load Leaflet from CDN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script
+      src="https://unpkg.com/esri-leaflet@3.0.1/dist/esri-leaflet.js"
+      integrity="sha512-JmpptMCcCg+Rd6x0Dbg6w+mmyzs1M7chHCd9W8HPovnImG2nLAQWn3yltwxXRM7WjKKFFHOAKjjF2SC4CgiFBg=="
+      crossorigin=""
+    ></script>
 
     <title>7 Wonders of Modern World</title>
   </head>
@@ -173,7 +174,23 @@
       <div class="place-description">
         <div id="placeDescription" class="description">
           <h2 id="place-h2"></h2>
-          <p id="content-place"></p>
+          <p id="content-place">
+            The Flavian Amphitheatre, more commonly known as the Colosseum,
+            stands in the archaeological heart of Rome and welcomes large
+            numbers of visitors daily, attracted by the fascination of its
+            history and its complex architecture. The building became known as
+            the Colosseum because of a colossal statue that stood nearby. It was
+            built in the 1st century CE at the behest of the emperors of the
+            Flavian dynasty. Until the end of the ancient period, it was used to
+            present spectacles of great popular appeal, such as animal hunts and
+            gladiatorial games. The building was, and still remains today, a
+            spectacle in itself. It is the largest amphitheatre in the world,
+            capable of presenting surprisingly complex stage machinery, as well
+            as services for spectators. A symbol of the splendour of the empire,
+            the Amphitheatre has changed its appearance and its function over
+            the centuries, presenting itself as a structured space but open to
+            the Roman community.
+          </p>
           <p>
             Font:
             <a class="font-link" href="" target="_blank"></a>
