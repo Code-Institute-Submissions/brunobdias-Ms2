@@ -126,7 +126,7 @@ a:hover {
     margin-left: 5rem;
     font-size: 2rem;
   }
-  
+
   .place-selector {
     top: 11rem;
   }
@@ -215,6 +215,10 @@ ul {
 
 .country-details {
   margin-top: 1rem;
+}
+
+.country-info p {
+  word-wrap: break-word;
 }
 
 .flag {
