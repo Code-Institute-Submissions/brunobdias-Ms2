@@ -253,8 +253,10 @@ $("#btnAbout").click(function () {
         "https://www.instagram.com/explore/tags/modernwonders/", //placeInstagram
         "https://www.facebook.com/The-seven-new-wonders-of-the-modern-world-100864461551771/", //placeFacebook
         "https://www.youtube.com/results?search_query=7+modern+wonders+of+the+world",//placeYoutube
+        //Credit Autoplay
+        //https://stackoverflow.com/questions/58189735/embedded-youtube-iframes-no-longer-autoplay
         `<iframe width="100%" height="100%" 
-            src="https://www.youtube.com/embed/7Dbuc6vIRnE" 
+            src="https://www.youtube.com/embed/7Dbuc6vIRnE?autoplay=1&mute=1" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture" 
