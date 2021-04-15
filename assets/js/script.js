@@ -166,9 +166,7 @@ $("#btnChrist").click(function () {
         "Christ The Redeemer", //place 
         "http://visit.rio/en/que_fazer/christtheredeemer/",//fontLink
         "Riotur", //fontDescription
-        "http://visit.rio/en/que_fazer/christtheredeemer/",//placeLink
-        //Oficial page but broken link
-        //"http://www.cristoredentoroficial.com.br/", //placeLink
+        "https://santuariocristoredentor.com.br/",//placeLink
         "https://twitter.com/cristoredentor", //placeTwitter
         "https://www.instagram.com/cristoredentor.rio/", //placeInstagram
         "https://www.facebook.com/cristoredentoroficial/", //placeFacebook
@@ -285,7 +283,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     $(".place-youtube").attr("href", placeYoutube);
     $(".video-div").html(iframeYoutube);
     checkPlaceContentVisible();
-    $("#btnTop").click();
+    //$("#btnTop").click();
 
     if (place == "About"){
         $("#btnShowCountryInfo").css("visibility", "hidden");
