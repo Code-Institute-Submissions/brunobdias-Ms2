@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /********************************* Font/Color-Scheme *********************************/
 .color-default {
   background-color: #6b705c;
@@ -19,15 +26,19 @@ a:visited {
 
 a:hover {
   color: #ddbea9;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /**Credit https://stackoverflow.com/questions/20751937/transition-background-color-via-slide-animation**/
 .btn {
   background-size: 100% 200%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, gray), color-stop(50%, green));
+  background-image: -o-linear-gradient(top, gray 50%, green 50%);
   background-image: linear-gradient(to bottom, gray 50%, green 50%);
   -webkit-transition: background-position 1s;
-  -moz-transition: background-position 1s;
+  -o-transition: background-position 1s;
   transition: background-position 1s;
 }
 
@@ -42,7 +53,8 @@ a:hover {
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .navbar-toggler:hover {
@@ -55,6 +67,8 @@ a:hover {
   background-color: #6b705c;
   overflow: hidden;
   padding: 1.5rem 0.5rem; /* Large padding which will shrink on scroll (using JS) */
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s; /* Adds a transition effect when the padding is decreased */
   opacity: 0.85;
   position: fixed; /* Sticky/fixed navbar */
@@ -80,6 +94,8 @@ a:hover {
 #navbar #brand {
   font-size: 2rem;
   font-weight: bold;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   text-align: center;
   margin-left: 5rem;
@@ -88,13 +104,17 @@ a:hover {
 /* Links on mouse-over */
 #navbar a:hover {
   text-shadow: 1px 1px #b7b7a4;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 
 #logo-link {
   display: none;
   visibility: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -107,6 +127,8 @@ a:hover {
 
 @media screen and (min-width: 446px) {
   .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #navbar #brand {
@@ -158,6 +180,7 @@ a:hover {
 
 /********************************* SECTION *********************************/
 .place-selector {
+  position: -webkit-sticky;
   position: sticky;
   margin-bottom: 1rem;
   top: 11rem;
@@ -212,7 +235,8 @@ ul {
 
 .btn-toggle :focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .country-details {
@@ -254,7 +278,9 @@ ul {
 }
 
 .social-links i:hover {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /********************************* FOOTER *********************************/
