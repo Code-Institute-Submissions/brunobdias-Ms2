@@ -119,6 +119,12 @@ function toContactForm() {
     //End Credit
 }
 
+//Credit to https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
+//End Credit
+
 //Places button click
 $("#btnColosseum").click(function () {
     changePlace('url(assets/images/colosseum-bkg.jpg)', //bkgImgURL
