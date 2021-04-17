@@ -1,7 +1,14 @@
+<div align="center">
+
+# The 7 Wonders of the Modern World
+
 <img src="assets/images/vintage-map.jpg">
 <a href='https://www.freepik.com/vectors/map'>Map vector created by channarongsds - www.freepik.com</a>
 
-# The 7 Wonders of the Modern World
+<img src="assets/images/amIresponsive.png">
+
+
+</div>
 
 ## Table of Contents
 > [UX](#ux)
@@ -37,7 +44,7 @@
 
 # UX
 >## Goals
->### Visitor Goals
+>### Visitor Goals <em>
 > As a visitor, I want to:
 > - Be able to easily navigate and find vital content.
 > - Easily understand the site and learn more about the wonders of the world.
@@ -45,15 +52,14 @@
 > - Be able to see on the map where it is the place.
 > - Be able to find official content webpages about the places.
 > - Be able to find social media links.
-> - Be able to get in touch through contact page. **
-> - Be able to see the page in english or portuguese. **
->
->### Business Goals
+> - Be able to get in touch through contact page.
+> </em>
+>### Business Goals <em>
 >
 > The Business goal is:
 > - Provide a satisfying, interactive and instructive demonstration of the 7 wonders of the mordern world.
 >
-> ** This Goals are listed at Features section as Future Implements
+</em>
 
 ### Design Choices
 >#### Fonts
