@@ -84,6 +84,13 @@ function scrollFunction() {
         $(".place-selector").css("top", "11rem");
     }
 
+    //Check window size and stick or not the place selector
+    if ($(window).width() <= 570) {
+        $(".place-selector").css("position", "relative");
+    } else {
+        $(".place-selector").css("position", "sticky");
+    }
+
     // Scroll to Top Button
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
