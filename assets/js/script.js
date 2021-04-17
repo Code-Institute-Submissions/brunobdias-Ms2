@@ -311,9 +311,14 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     //$("#btnTop").click();
 
     if (place == "About") {
+        if ($(".country-details").is(':visible')) {
+            $("#btnShowCountryInfo").click();
+        }     
         $("#btnShowCountryInfo").css("visibility", "hidden");
+
     } else {
         $("#btnShowCountryInfo").css("visibility", "visible");
+
         fetchCountryData(placeCountry);
     }
 };
