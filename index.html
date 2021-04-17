@@ -88,12 +88,13 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href=""
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="">Home</a>
                 </li>
                 <li class="nav-item">
                   <a id="btnAbout" class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a id="btnContact" class="nav-link" href="#bottom">Contact</a>
                 </li>
               </ul>
             </div>
@@ -289,6 +290,29 @@
     </section>
 
     <!--<div class="section-bkg"></div>-->
+
+    <section class="container-sm section contact color-section">
+      <div class="col mb-5">
+        <h5 class="uppercase text-center contact-title mt-2">Contact us!</h5>
+
+        <div class="center-form contact-form">
+            <form>
+                <input type="text" name="name" id="fullname" class="form-control name" placeholder="Name"
+                    required />
+                <input type="email" name="e-mail" id="email" class="form-control email" placeholder="Email"
+                    required />
+                <textarea rows="5" name="comment" id="comment" class="form-control comment"
+                    placeholder="Place your comment here!" required></textarea>
+                <div class="form-row text-center">
+                    <div class="col">
+                        <button type="submit" id="btn-submit"
+                            class="btn btn-secondary mt-1">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
 
     <footer class="container-fluid footer color-default">
       <div class="row footer-items">

@@ -100,6 +100,18 @@ function topFunction() {
 }
 //End Credit
 
+$("#btnContact").click(function () {
+    toContactForm(); 
+});
+
+function toContactForm() {
+    //Credit https://www.codegrepper.com/code-examples/javascript/scroll+to+bottom+of+page+javascript
+    console.log("To Contact Form")
+    document.body.scrollTo(0,document.body.scrollHeight); // For Safari
+    document.documentElement.scrollTo(0,document.body.scrollHeight); // For Chrome, Firefox, IE and Opera
+    //End Credit
+}
+
 //Places button click
 $("#btnColosseum").click(function () {
     changePlace('url(assets/images/colosseum-bkg.jpg)', //bkgImgURL
