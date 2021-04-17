@@ -13,6 +13,7 @@ $(window).on("load", function () {
 
     //$("#btnColosseum").trigger("click");
     $("#btnAbout").trigger("click");
+    $("#btnTop").click();
 
 });
 
