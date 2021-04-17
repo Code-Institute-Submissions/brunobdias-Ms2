@@ -45,6 +45,19 @@
       crossorigin=""
     ></script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      var userId = "user_6au7ehLY75DqZoHcBTN3y";
+      var templateId = "template_geli2d5";
+
+      (function () {
+        emailjs.init(userId);
+      })();
+    </script>
+
     <title>7 Wonders of Modern World</title>
   </head>
 
@@ -88,7 +101,9 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">Home</a>
+                  <a class="nav-link active" aria-current="page" href=""
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a id="btnAbout" class="nav-link" href="about.html">About</a>
@@ -296,20 +311,43 @@
         <h5 class="uppercase text-center contact-title mt-2">Contact us!</h5>
 
         <div class="center-form contact-form">
-            <form>
-                <input type="text" name="name" id="fullname" class="form-control name" placeholder="Name"
-                    required />
-                <input type="email" name="e-mail" id="email" class="form-control email" placeholder="Email"
-                    required />
-                <textarea rows="5" name="comment" id="comment" class="form-control comment"
-                    placeholder="Place your comment here!" required></textarea>
-                <div class="form-row text-center">
-                    <div class="col">
-                        <button type="submit" id="btn-submit"
-                            class="btn btn-secondary mt-1">Submit</button>
-                    </div>
-                </div>
-            </form>
+          <form onsubmit="return sendMail(this);">
+            <input
+              type="text"
+              name="name"
+              id="fullname"
+              class="form-control name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="e-mail"
+              id="email"
+              class="form-control email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              rows="5"
+              name="comment"
+              id="comment"
+              class="form-control comment"
+              placeholder="Place your comment here!"
+              required
+            ></textarea>
+            <div class="form-row text-center">
+              <div class="col">
+                <button
+                  type="submit"
+                  id="btn-submit"
+                  class="btn btn-secondary mt-1"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -374,5 +412,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/restCountries.js"></script>
     <script src="assets/js/leaflet.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
