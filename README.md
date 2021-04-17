@@ -1,9 +1,8 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-<img src="assets/images/logo.png" style="margin: 0;">
 
 ## Table of Contents
->1. [UX](#ux)
+> [UX](#ux)
 >    - [Goals](#goals)
 >        - [Visitor Goals](#visitor-goals)
 >        - [Member Goals](#member-goals)
@@ -15,18 +14,18 @@
 >        - [Images](#images)
 >    - [Wireframes](#wireframes)
 >
-> 2. [Features](#features)
+> [Features](#features)
 >    - [Existing Features](#existing-features)
 >    - [Features Left to Implement](#features-left-to-implement)
 >
->3. [Technologies Used](#technologies-used)
+> [Technologies Used](#technologies-used)
 >
->4. [Testing](#testing)
+> [Testing](#testing)
 >
->5. [Deployment](#deployment)
+> [Deployment](#deployment)
 >    - [How to run this project locally](#how-to-run-this-project-locally)
 >
->6. [Credits](#credits)
+> [Credits](#credits)
 >    - [Content](#content)
 >    - [Images](#images)
 >    - [Code](#code)
@@ -73,22 +72,20 @@
 >    <img src="assets/images/colorPalette.png">
 > 
 >#### Images
-
-> - All images used are located at [images.md](images.md) file.
-
-
+>
 ><img src="assets/images/navlogo.png">
+>
+> - All images used are located at [images.md](images.md) file.
+>
 >
 >   [Logo](https://www.hiclipart.com/free-transparent-background-png-clipart-izyki). 
 >
 >### Wireframes
 >
 >The wireframes were created using [Balsamiq](https://balsamiq.com/) 
->and hosted at [Imgbb](https://imgbb.com). - Not yet
 >
-> - [Wireframe Initial](https://ibb.co/YZCbc9P)<img src="assets/images/The7wonders.png">
+><img src="assets/images/The7wonders.png">
 >
-> Final Result... (Working...)
 
 ## Features
 >  - The website main feature it is a interactive demonstration of the 7 wonders, through
@@ -98,7 +95,34 @@ pictures, share the social media channels and the official page of the places.
  
 ## Technologies Used
 
+>- This project uses HTML, CSS and JavaScript.
+>
+> - [Gitpod](https://gitpod.io/)
+>    - Developer used **Gitpod** as IDE to build the website.
+> - [Bootstrap](https://www.bootstrapcdn.com/)
+>    - The project uses **Bootstrap** to simplify the development process  and make the website responsive easily.
+>    - The project also uses Bootstrap to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+> - [Google Fonts](https://fonts.google.com/)
+>    - The project uses **Google fonts** to style the website fonts.
+> - [GitHub](https://github.com/)
+>    - This project uses **GitHub** to store and share all project code remotely.
+> - [Balsamiq](https://balsamiq.com/)
+>    - The Wireframes was created using **Balsamiq**.
+> - [Coolors](https://coolors.co/)
+>    - The **Coolors** was used to define the project color scheme.
+> - [W3C HTML Validator](https://validator.w3.org/)
+>    - The **W3C HTML Validator** was used to validate the project html.
+> - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+>    - The **W3C CSS Validator** was used to validate the project css.
+> - [Pixels Converter](https://pixelsconverter.com/px-to-rem)
+>    - The **Pixels Converter** was used to change pixels to rem.
+> - [Auto Prefixer](https://autoprefixer.github.io)
+>    - The **Auto Prefixer** was used to parse the CSS and adds vendor prefixes.
+> - [TinyPng](https://tinypng.com/)
+>    - The **TinyPng** was used to compress all images used
+
 ## Testing
+> - All informations about test are located at [testing.md](testing.md) file.
 
 ## Deployment
 > - The project was developed using [Gitpod](https://gitpod.io/) commited to **git**,
