@@ -50,11 +50,8 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-      var userId = "user_6au7ehLY75DqZoHcBTN3y";
-      var templateId = "template_geli2d5";
-
       (function () {
-        emailjs.init(userId);
+        emailjs.init("user_6au7ehLY75DqZoHcBTN3y");
       })();
     </script>
 
@@ -311,11 +308,11 @@
         <h5 class="uppercase text-center contact-title mt-2">Contact us!</h5>
 
         <div class="center-form contact-form">
-          <form onsubmit="return sendMail(this);">
+          <form onsubmit="return sendEmail(this);">
             <input
               type="text"
               name="name"
-              id="fullname"
+              id="name"
               class="form-control name"
               placeholder="Name"
               required

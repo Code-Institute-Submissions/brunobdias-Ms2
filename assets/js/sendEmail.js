@@ -1,16 +1,23 @@
-function sendEmailJs(contactForm){
-    emailjs
-    .send(userId, templateId, {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.email.value,
-        "message": contactForm.comment.value})
+
+function sendEmail(contactForm) {
+
+  let templateParams = {
+    from_name: contactForm.name.value,
+    from_email: contactForm.email.value,
+    message: contactForm.comment.value
+  };
+
+  emailjs
+    .send("service_f04f4oq", "template_geli2d5", templateParams)
     .then(
       function (response) {
-        console.log("SUCCESS!", response.status, response.text);
+        alert("SUCCESS!", response.status, response.text);
       },
       function (error) {
+        alert("FAILED...", error)
         console.log("FAILED...", error);
       }
     );
-    return false;  
+
+  return false;
 }
