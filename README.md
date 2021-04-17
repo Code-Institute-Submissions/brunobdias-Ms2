@@ -1,5 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="assets/images/vintage-map.jpg">
+<a href='https://www.freepik.com/vectors/map'>Map vector created by channarongsds - www.freepik.com</a>
 
+# The 7 Wonders of the Modern World
 
 ## Table of Contents
 > [UX](#ux)
@@ -76,9 +78,6 @@
 ><img src="assets/images/navlogo.png">
 >
 > - All images used are located at [images.md](images.md) file.
->
->
->   [Logo](https://www.hiclipart.com/free-transparent-background-png-clipart-izyki). 
 >
 >### Wireframes
 >
