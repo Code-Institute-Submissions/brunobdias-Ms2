@@ -10,6 +10,10 @@ html {
 }
 
 /********************************* Font/Color-Scheme *********************************/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .color-default {
   background-color: #6b705c;
   color: #ffe8d6;
