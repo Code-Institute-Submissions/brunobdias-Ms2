@@ -24,11 +24,11 @@ function fetchCountryData(placeCountry) {
         borders,
         flag
     }) {
-                        
+
         population = formatNumber(population);
         currencies = setCurrencie(currencies);
-        
-        
+
+
         //clearfix CREDIT https://getbootstrap.com/docs/5.0/layout/columns/
         $(".country-info").html(`
                 <div class="info clearfix">
@@ -52,12 +52,12 @@ function fetchCountryData(placeCountry) {
                 </div>`);
     }
 
-    function setCurrencie(currenciesArray){     
+    function setCurrencie(currenciesArray) {
         return currenciesArray[0].name + " " + currenciesArray[0].symbol;
     }
 
     //CREDIT https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
-    function formatNumber(pNumber){
-          return new Intl.NumberFormat().format(pNumber);          
+    function formatNumber(pNumber) {
+        return new Intl.NumberFormat().format(pNumber);
     }
 }

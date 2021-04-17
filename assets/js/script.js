@@ -11,7 +11,6 @@ $(window).on("load", function () {
         'assets/images/tajmahal-bkg.jpg'
     ]).preloadImages();
 
-    //$("#btnColosseum").trigger("click");
     $("#btnAbout").trigger("click");
     $("#btnTop").click();
 
@@ -109,14 +108,14 @@ function topFunction() {
 //End Credit
 
 $("#btnContact").click(function () {
-    toContactForm(); 
+    toContactForm();
 });
 
 function toContactForm() {
     //Credit https://www.codegrepper.com/code-examples/javascript/scroll+to+bottom+of+page+javascript
     console.log("To Contact Form")
-    document.body.scrollTo(0,document.body.scrollHeight); // For Safari
-    document.documentElement.scrollTo(0,document.body.scrollHeight); // For Chrome, Firefox, IE and Opera
+    document.body.scrollTo(0, document.body.scrollHeight); // For Safari
+    document.documentElement.scrollTo(0, document.body.scrollHeight); // For Chrome, Firefox, IE and Opera
     //End Credit
 }
 
@@ -305,7 +304,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     checkPlaceContentVisible();
     //$("#btnTop").click();
 
-    if (place == "About"){
+    if (place == "About") {
         $("#btnShowCountryInfo").css("visibility", "hidden");
     } else {
         $("#btnShowCountryInfo").css("visibility", "visible");
