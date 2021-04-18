@@ -390,7 +390,7 @@ function getContent(place) {
             "it was not known to the Spanish during the colonial period and remained unknown to the outside world until American historian Hiram Bingham brought it to international attention in 1911. " +
             "Machu Picchu was built in the classical Inca style, with polished dry-stone walls. Its three primary structures are the Intihuatana, the Temple of the Sun, and the Room of the Three Windows. " +
             "Most of the outlying buildings have been reconstructed in order to give tourists a better idea of how they originally appeared. By 1976, 30% of Machu Picchu had been restored and restoration continues. " +
-            "Machu Picchu was declared a Peruvian Historic Sanctuary in 1981 and a UNESCO World Heritage Site in 1983.[13] In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide " +
+            "Machu Picchu was declared a Peruvian Historic Sanctuary in 1981 and a UNESCO World Heritage Site in 1983. In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide " +
             "internet poll. "
         )
     } else if (place === "Christ The Redeemer") {
@@ -429,8 +429,8 @@ function getContent(place) {
             "The Nabataeans buried their dead in intricate tombs that were cut out of the mountain sides and the city also had temples, a theater, and following the Roman " +
             "annexation and later the Byzantine influence, a colonnaded street and churches. " +
             "In addition to the magnificent remains of the Nabataean city, human settlement and land use for over 10,000 years can be traced in Petra, " +
-            " where great natural, cultural, archaeological and geological features merge. " +
-            "On December 6, 1985, Petra was designated a World Heritage Site,, also Petra was chosen by the Smithsonian Magazine as one of the 28 places you should visit them before you die."
+            "where great natural, cultural, archaeological and geological features merge. " +
+            "On December 6, 1985, Petra was designated a World Heritage Site, also Petra was chosen by the Smithsonian Magazine as one of the 28 places you should visit them before you die."
         )
     } else if (place === "Taj Mahal") {
         return ("The Taj Mahal is actually an integrated complex of structures with the white domed marble mausoleum being its most significant component. Entrusted to a board-of-architects " +
@@ -451,12 +451,12 @@ function getContent(place) {
             "others downplayed or criticized the contest. After supporting the New 7 Wonders Foundation at the beginning of the campaign by providing advice on nominee selection, " +
             "the United Nations Educational, Scientific, and Cultural Organization (UNESCO), by its bylaws having to record all and give equal status to world heritage sites, " +
             "distanced itself from the undertaking in 2001 and again in 2007. " +
-            "The seven winners were chosen from 21 candidates, which had been whittled down from 77 choices by a panel in 2006." +
-            "The New 7 Wonders Foundation, established in 2001, relied on private donations and the sale of broadcast rights and" +
-            "received no public funding. After the final announcement, New 7 Wonders said it did not earn anything from the exercise" +
-            "and barely recovered its investment." +
+            "The seven winners were chosen from 21 candidates, which had been whittled down from 77 choices by a panel in 2006. " +
+            "The New 7 Wonders Foundation, established in 2001, relied on private donations and the sale of broadcast rights and " +
+            "received no public funding. After the final announcement, New 7 Wonders said it did not earn anything from the exercise " +
+            "and barely recovered its investment. " +
             "Although N7W describes itself as a not-for-profit organization, the company behind it—the New Open World Corporation (NOWC)—is" +
-            "a commercial business. All licensing and sponsorship money is paid to NOWC." +
+            "a commercial business. All licensing and sponsorship money is paid to NOWC. " +
             "The foundation ran two subsequent programs: New 7 Wonders of Nature, the subject of voting until 2011, and New7Wonders Cities, which ended in 2014."
         )
     };
