@@ -1,0 +1,17 @@
+### Helpful Links
+
+> - [Safari Africa - JimLynx](https://github.com/JimLynx/CI-MS2-Safari-Africa#readme)
+> - [Leaflet.Js Sample- TravelTimN](https://github.com/TravelTimN/ci-ifd-lead/blob/main/week4-leafletjs/leaflet.md)
+> - [How to Scroll to Top](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+> - [Transition Background Effect](https://stackoverflow.com/questions/20751937/transition-background-color-via-slide-animation)
+> - [Navbar shrink when scroll](https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp)
+> - [How to fit a youtube video size with a div container](https://stackoverflow.com/questions/46651831/how-to-fit-youtube-video-size-with-div-container)
+> - [Preloading images with jquery](https://stackoverflow.com/questions/476679/preloading-images-with-jquery)
+> - [Js scroll to Bottom](https://www.codegrepper.com/code-examples/javascript/scroll+to+bottom+of+page+javascript)
+> - [Auto close navbar menu when clicked on link](https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/)
+> - [Youtube IFrame AutoPlay](https://stackoverflow.com/questions/58189735/embedded-youtube-iframes-no-longer-autoplay)
+> - [How to determine the current state of jquery](https://stackoverflow.com/questions/15066304/how-to-determine-the-current-state-of-jquery-toggle)
+> - [How to get content of rest-countries api](https://stackoverflow.com/questions/65189680/rest-countries-api-how-to-get-content)
+> - [Bootstrap layout columns](https://getbootstrap.com/docs/5.0/layout/columns/)
+> - [Js NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat)
+> - [Js Clear all fields of a form](https://stackoverflow.com/questions/6653556/jquery-javascript-function-to-clear-all-the-fields-of-a-form)
