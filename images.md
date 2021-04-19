@@ -1,3 +1,5 @@
+<div align="center">
+
 # The 7 wonders of Modern world 
 
 ### Colosseum, Rome Italy
@@ -28,6 +30,32 @@
 >![Taj Mahal](https://images.unsplash.com/photo-1564507592333-c60657eea523?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80)
 >[Taj Mahal](https://unsplash.com/photos/iWMfiInivp4)
 
+</div>
+
+### Map Icons
+
+>![Colosseum](assets/images/colosseumIco.png) <br>
+<a target="_blank" href="undefined/icons/set/coliseum">Colosseum icon</a> icon by <a target="_blank" href="">Icons8</a>
+
+>![Chichen](assets/images/chichenItzaIco.png) <br>
+<a target="_blank" href="undefined/icons/set/chichen-itza--v1">Chichen Itza icon</a> icon by <a target="_blank" href="">Icons8</a>
+
+>![Machu Picchu](assets/images/machuPicchuIco.png) <br>
+Machu Picchu <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+>![Christ Redeemer](assets/images/christRedeemerIco.png) <br>
+<a target="_blank" href="undefined/icons/set/statue-of-christ-the-redeemer--v1">Statue Of Christ The Redeemer icon</a> icon by <a target="_blank" href="">Icons8</a>
+
+>![Great Wall of China](assets/images/greatWallIco.png) <br>
+<a target="_blank" href="undefined/icons/set/great-wall--v1">Great Wall icon</a> icon by <a target="_blank" href="">Icons8</a>
+
+>![Petra](assets/images/petraIco.png) <br>
+Petra Icons made by <a href="https://www.flaticon.com/authors/wichaiwi" title="Wichai.wi">Wichai.wi</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+>![Taj Mahal](assets/images/tajMahalIco.png) <br>
+Taj Mahal Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+
 ### Icons of Buttons
 
 >![Colosseum](assets/images/btnColosseumIco.png) 
@@ -57,4 +85,4 @@ Taj Mahal Icons made by <a href="https://www.freepik.com" title="Freepik">Freepi
 
 ### Logo
 ><img src="assets/images/navlogo.png"><br>
->   [Logo](https://www.hiclipart.com/free-transparent-background-png-clipart-izyki)
+>   [Logo Hiclipart](https://www.hiclipart.com/free-transparent-background-png-clipart-izyki)
