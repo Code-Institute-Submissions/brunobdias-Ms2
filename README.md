@@ -50,6 +50,7 @@
 >    - [Content](#content)
 >    - [Images](#images)
 >    - [Code](#code)
+>    - [Code Snippets](#code-snippets)
 >    - [Acknowledgements](#acknowledgements)
 
 ----
@@ -217,8 +218,11 @@ https://github.com/brunobdias/Ms2.git . When you **git clone**, to a remote repo
 >### Code
 > The code were developed on [Gitpod](https://gitpod.io/) hosted at [GitHub](https://github.com/) and deployed at [GitHub Pages](https://pages.github.com/), written  based at previous classes at [CodeInstitue](https://codeinstitute.net/),
  with the assistance of [Tim Nelson](https://github.com/TravelTimN) and your Leaflet map samples, [Jim Morel](https://github.com/JimLynx) your tips and contents to milestone projects and your Safari project avaiable, [Aukje van der Wal](https://github.com/byIlsa) for your call and assitance on handling Api's, [w3Schools](https://www.w3schools.com/), [StackOverflow](https://stackoverflow.com/),
- [Bootstrap](https://getbootstrap.com/), and all other links credited, as comments over all code are located [HERE](helpCredits.md) with documentation, tips and samples to understand some resourses and to help on bug fixes.
- 
+ [Bootstrap](https://getbootstrap.com/), with documentation, tips and samples to understand some resourses and to help on bug fixes.
+>
+> ### Code Snippets
+> All other links credited, as comments over all code are located [HERE](helpCredits.md)
+
 ## Acknowledgements
 > Special thanks to: 
 > - My Mentor [Spencer Barriball](https://github.com/5pence) from Code Institute for his time, support, assistance and expertise in explaining and guide me through 

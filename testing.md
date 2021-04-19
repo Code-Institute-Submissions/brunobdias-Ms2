@@ -1,3 +1,17 @@
+## Project development walkthrough
+> - The idea of the Ms2 project came from a Travel page project, and how
+make fit on the project dead line, I decided to found something more static and less dynamic with limited options of places, so the 7 wonders of the world, seems to be a good option, from this point I discovered about the 7 Wonders of the modern world, which I've never paid attention to, that we had 7 wonders of the ancient world, and now we have the 7 wonders of modern world. That locked a nice place to kick-off the project.
+> - When I started the development process, I've think on the wireframe, the user stories, start the readme and started coding.
+> - My first challenge were with some effects when scrolling the page to shrink the navbar, solved checking some samples.
+> - Then implement the youtube IFrame videos and make then resposive without leak the container size, solved with the mentor helps and some research on stackoverflow.
+> - With the map several of challenges happened, after the Hackton 2021 ST. Patricks day, I've decided to use the leafleatJs map instead of The Google Maps, the idea was approved and encouraged by my Mentor, besides it is an opensource solution, not involving the use of your credit card. Following the quickstart of LeafletJS page it seems easy and works just fine, I've created an account on Mapbox and start using this Api Map service, but that its a limited map service to free acount, besides of it, it was realy hard to customize the map and fit on different sizes and make it responsive, then after a long time spent trying to make this works I decided to look on Slack community when I came across two good source of samples and Ideas, that was Tim Nelson Sample project on trying leaflet and the Jym Lynx Safari project that used the leaflet map as well; That moment was the table turn on the leaflet map exploring, I've changed the map service source to a public source that was the ESRI feat Arcgis, this with some code snippets, samples and Ideas, I've been able to overcome the map challenge.
+> - The next challenge were with the Rest Countries Api, and how format and manipulate the return values of the api, after some time spent some research have helped with it. One still non solved issue it is the country border list, that is all countries displayed are abreviated, that doesn't look good, but I couldn't overcome this in time to deliver the project.
+> - The contact page sugested by the Mentor wasn't hard, the code instute class about how integrate the email with EmailJs were pretty useful, and thankfully that went pretty good.
+> - Then I've made choice to create a better user experience, creating minor features to help, as stick the toolbar to the navbar and having no need to scroll to top every time that he needs change the place, or the button back to top.
+
+---
+
+
 ## Validations
 > --- 
 > [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbrunobdias.github.io%2FMs2%2Findex.html)
@@ -74,7 +88,7 @@
 > Figure 2
 > </div>
 >
-> - Expanded Navbar: When on top of the of page the navbar stay at full size, and with the logo visible;
+> - Expanded Navbar: When on top of the page the navbar stay at full size, and with the logo visible;
 > - Collapsed Navbar: After scroll the page there is a effect control to hide the logo and collapses the navbar, expanding and showing the logo when roll to top again.
 > ---
 > #### Toolbar
@@ -85,7 +99,7 @@
 >   Figure 3
 > </div>
 >
->  - The Toolbar is sticky at the top on PC Screens, and allows you to navigate through the places avaiables on website.
+>  - The Toolbar is sticky at the top on PC Screens, and allows you to navigate through the places availables on website.
 >
 > ---
 > #### Section - Content - About
