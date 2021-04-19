@@ -59,6 +59,7 @@
 > The project aims to bring some content as videos, descriptions of the places, some informations of the country where they are located, and help to promote tourism to the 7 places elected as wonders of modern world.
 
 ## UX
+> The page desing style used is single page.
 >## Goals
 >### Visitor Goals <em>
 > As a visitor, I want to:
@@ -111,8 +112,11 @@
 >
 
 ## Features
->  - The website main feature it is a interactive demonstration of the 7 wonders, through
+>   - The website main feature it is a interactive demonstration of the 7 wonders, through
 pictures, share the social media channels and the official page of the places.
+>   - Youtube video from the places that were elected as 7 wonders of the modern world.
+>   - A map using LeafletJs, customized with styled pins to show the places were the wonders are located.
+>   - A Contact form using EmailJs service.
 >
 >### Features Left to Implement
 > - Option to make login with a social media and add Comments and ratings to the place.
