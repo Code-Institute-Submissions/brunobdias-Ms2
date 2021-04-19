@@ -1,6 +1,6 @@
 ## Project development walkthrough
 > - The idea of the Ms2 project came from a Travel page project, and how
-make fit on the project dead line, I decided to found something more static and less dynamic with limited options of places, so the 7 wonders of the world, seems to be a good option, from this point I discovered about the 7 Wonders of the modern world, which I've never paid attention to, that we had 7 wonders of the ancient world, and now we have the 7 wonders of modern world. That locked a nice place to kick-off the project.
+make fit on the project dead line, I decided to found something more static and less dynamic with limited options of places, so the 7 wonders of the world, seems to be a good option, from this point I discovered about the 7 Wonders of the modern world, which I've never paid attention to, that we had 7 wonders of the ancient world, and now we have the 7 wonders of modern world. That looked a nice place to kick-off the project.
 > - When I started the development process, I've think on the wireframe, the user stories, start the readme and started coding.
 > - My first challenge were with some effects when scrolling the page to shrink the navbar, solved checking some samples.
 > - Then implement the youtube IFrame videos and make then resposive without leak the container size, solved with the mentor helps and some research on stackoverflow.
