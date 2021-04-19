@@ -1,4 +1,3 @@
-
 function sendEmail(contactForm) {
 
   let templateParams = {
@@ -17,7 +16,7 @@ function sendEmail(contactForm) {
         alert("Email Sent!", response.status, response.text);
       },
       function (error) {
-        alert("FAILED...", error)
+        alert("FAILED...", error);
         console.log("FAILED...", error);
       }
     );

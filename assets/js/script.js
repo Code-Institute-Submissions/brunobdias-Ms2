@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 // When the user scrolls down 80px from the top of the document, 
 //resize the navbar's padding and the logo's font size
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollFunction(); };
 
 //Preload Sample from 
 //https://stackoverflow.com/questions/476679/preloading-images-with-jquery
@@ -30,7 +30,9 @@ $.fn.preloadImages = function () {
     this.each(function () {
         $('<img/>')[0].src = this;
     });
-}
+};
+
+var mybutton = document.getElementById("btnTop");
 
 //Scroll Function
 function scrollFunction() {
@@ -99,8 +101,6 @@ function scrollFunction() {
 }
 
 //CREDIT: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-mybutton = document.getElementById("btnTop");
-
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -113,14 +113,14 @@ $("#btnContact").click(function () {
 
 function toContactForm() {
     //Credit https://www.codegrepper.com/code-examples/javascript/scroll+to+bottom+of+page+javascript
-    console.log("To Contact Form")
+    console.log("To Contact Form");
     document.body.scrollTo(0, document.body.scrollHeight); // For Safari
     document.documentElement.scrollTo(0, document.body.scrollHeight); // For Chrome, Firefox, IE and Opera
     //End Credit
 }
 
 //Credit to https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/
-$('.navbar-collapse a').click(function(){
+$('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
 });
 //End Credit
@@ -299,8 +299,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
                 "background-size", "cover");
     $("#place-h2").text(placeSelected);
     $("#content-place").text(getContent(place));
-    $(".font-link").attr("href", fontLink).html(fontDescription
-        + ` <i class="fas fa-external-link-alt" aria-hidden="true"></i>`);
+    $(".font-link").attr("href", fontLink).html(fontDescription + ` <i class="fas fa-external-link-alt" aria-hidden="true"></i>`);
     $(".place-link").attr("href", placeLink);
     $(".place-twitter").attr("href", placeTwitter);
     $(".place-instagram").attr("href", placeInstagram);
@@ -313,7 +312,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
     if (place == "About") {
         if ($(".country-details").is(':visible')) {
             $("#btnShowCountryInfo").click();
-        }     
+        }
         $("#btnShowCountryInfo").css("visibility", "hidden");
 
     } else {
@@ -321,7 +320,7 @@ function changePlace(bkgImgURL, place, fontLink, fontDescription, placeLink,
 
         fetchCountryData(placeCountry);
     }
-};
+}
 
 function checkPlaceContentVisible() {
     if (!$("#content-place").is(':visible')) {
@@ -365,7 +364,7 @@ function getContent(place) {
             "surprisingly complex stage machinery, as well as services for spectators. A symbol of the " +
             "splendour of the empire, the Amphitheatre has changed its appearance and its function over " +
             "the centuries, presenting itself as a structured space but open to the Roman community."
-        )
+        );
     } else if (place === "Chichén Itzá") {
         return ("Chichén Itzá is the best example of the migratory movements that occurred in Mesoamerica towards " +
             "the Early Postclassic, since it brings together features of material culture from both the Maya area and " +
@@ -378,7 +377,7 @@ function getContent(place) {
             "and architectural knowledge that the Mayans possessed, and which has resulted in being one of the most studied " +
             "cultures and regions around these issues, in addition to the territorial political organization and the exploitation of resources. " +
             "Chronology 525 to 1200 AD. C. Main chronological location: Early Postclassic 900 to 1200 AD. C."
-        )
+        );
     } else if (place === "Machu Picchu") {
         return ("Machu Picchu is a 15th-century Inca citadel, located in the Eastern Cordillera of southern Peru, on a 2,430-metre (7,970 ft) mountain ridge. It is located in the Machupicchu " +
             "District within Urubamba Province above the Sacred Valley, which is 80 kilometres (50 mi) northwest of Cuzco. The Urubamba River flows past it, cutting through the Cordillera " +
@@ -392,7 +391,7 @@ function getContent(place) {
             "Most of the outlying buildings have been reconstructed in order to give tourists a better idea of how they originally appeared. By 1976, 30% of Machu Picchu had been restored and restoration continues. " +
             "Machu Picchu was declared a Peruvian Historic Sanctuary in 1981 and a UNESCO World Heritage Site in 1983. In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide " +
             "internet poll. "
-        )
+        );
     } else if (place === "Christ The Redeemer") {
         return ("In the top of the mountain is installed Christ the redeemer, one of the most wanted touristic sides of Rio de Janeiro. Biggest and most famous scripture Art Déco of the world, the Christ statue started " +
             "to be planned in 1921 and it was developed by the engineer Heitor da Silva Costa over 5 years of job, from 1926 to 1931, the opening year of the monument. " +
@@ -400,7 +399,7 @@ function getContent(place) {
             "it was elected one of the Seven Wonders of the World made by formal voting in 2007 by the Swiss Institution New 7 Wonders Foundation. The monument is accessible by train, van or car. " +
             "To get into the monument, there’s a nice ride by train that, during 20 minutes, it crosses Mata Atlântica until Corcovado’s top. Making an easy access to the visitants, three panoramic " +
             "elevators and four escalators were built. The visual is amazing; it makes an unmissable programme for those that visit the city."
-        )
+        );
     } else if (place === "The Great Wall of China") {
         return ("The Great Wall of China (traditional Chinese: 萬里長城; simplified Chinese: 万里长城; pinyin: Wànlǐ Chángchéng) is a series of fortifications that were built across the historical northern " +
             "borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. Several walls were built from as early as the 7th century BC, " +
@@ -413,7 +412,7 @@ function getContent(place) {
             "The frontier walls built by different dynasties have multiple courses. Collectively, they stretch from Liaodong in the east to Lop Lake in the west, from the present-day " +
             "Sino–Russian border in the north to Tao River (Taohe) in the south; along an arc that roughly delineates the edge of the Mongolian steppe; spanning over 20,000 km " +
             "(12,000 mi) in total. Today, the defensive system of the Great Wall is generally recognized as one of the most impressive architectural feats in history."
-        )
+        );
     } else if (place === "Ruins of Petra") {
         return ("The city of Petra, capital of the Nabataean Arabs, is one of the most famous archaeological sites in the world, it is Located 240 km south of the capital Amman and 120 km north " +
             "of the red sea town of Aqaba (see the Map), Petra the world wonder, is undoubtedly Jordan's most valuable treasure and greatest tourist attraction, and it is visited by " +
@@ -431,7 +430,7 @@ function getContent(place) {
             "In addition to the magnificent remains of the Nabataean city, human settlement and land use for over 10,000 years can be traced in Petra, " +
             "where great natural, cultural, archaeological and geological features merge. " +
             "On December 6, 1985, Petra was designated a World Heritage Site, also Petra was chosen by the Smithsonian Magazine as one of the 28 places you should visit them before you die."
-        )
+        );
     } else if (place === "Taj Mahal") {
         return ("The Taj Mahal is actually an integrated complex of structures with the white domed marble mausoleum being its most significant component. Entrusted to a board-of-architects " +
             "by the Emperor Shah Jahan, the construction of the Taj Complex began about 1631 AD. The principal mausoleum was completed in 1648 AD by employing thousands of " +
@@ -441,7 +440,7 @@ function getContent(place) {
             "White inlays are used in sandstone buildings, and dark or black inlays on the whitemarbles. Mortared areas of the marble buildings have been stained or " +
             "painted in a contrasting colour, creating geometric patterns of considerable complexity. Floors and walkways use contrasting tiles or blocks in tessellation patterns. " +
             "The inlay stones are of yellow marble, jasper and jade, polished and levelled to the surface of the walls."
-        )
+        );
     } else if (place === "About") {
         return ("New 7 Wonders of the World was a campaign started in 2000 to choose Wonders of the World from a selection of 200 existing monuments. The popularity poll via free " +
             "Web-based voting and small amounts of telephone voting was led by Canadian-Swiss Bernard Weber and organized by the New 7 Wonders Foundation (N7W) based in Zurich, Switzerland, " +
@@ -458,6 +457,6 @@ function getContent(place) {
             "Although N7W describes itself as a not-for-profit organization, the company behind it—the New Open World Corporation (NOWC)—is" +
             "a commercial business. All licensing and sponsorship money is paid to NOWC. " +
             "The foundation ran two subsequent programs: New 7 Wonders of Nature, the subject of voting until 2011, and New7Wonders Cities, which ended in 2014."
-        )
-    };
+        );
+    }
 }
